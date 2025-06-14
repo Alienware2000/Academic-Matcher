@@ -1,16 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import json
 
 # Step 1: Fetch the webpage HTML
 
 url = "https://engineering.yale.edu/academic-study/departments/computer-science/research-areas"
-
 response = requests.get(url)        # Send GET request to URL
 html = response.text                # Extract the HTML text content
 
 # print(html[:1000])                  # Print the first 1000 characters just to inspect it
-
 
 # Step 2: Parse the HTML using BeautifulSoup
 
@@ -30,6 +29,8 @@ soup = BeautifulSoup(html, "html.parser")
 blocks = soup.find_all("div", class_="side-nav-blocks")
 print(f"Found {len(blocks)} research areas.")
 
+data = []
+
 for block in blocks:
     title_tag = block.find("h2")
     if not title_tag:
@@ -41,7 +42,7 @@ for block in blocks:
     if re.match(r"^\d{4}\s*[-–]\s*\d{4}$", title):
         continue  # e.g., "2025–2020"
 
-    print("Area:", title)
+    # print("Area:", title)
 
     # Step 4: Extract description paragraphs
 
@@ -57,5 +58,17 @@ for block in blocks:
 
     # Join all the description <p> tags into one string
     description = " ".join(description_paragraphs)
-    print("Description:", description[:200] + "...\n")  # Print first 200 characters to preview
+    # print("Description:", description[:200] + "...\n")  # Print first 200 characters to preview
 
+    data.append({
+    "area": title,
+    "description": description
+    })
+
+# Step 5: Save results to JSON
+output_path = "data/research_areas.json"
+
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print(f"\n✅ Saved {len(data)} research areas to {output_path}")
