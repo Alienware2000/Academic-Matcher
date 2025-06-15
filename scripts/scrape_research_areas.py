@@ -2,105 +2,88 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
+import os
 
-# -------------------------------
-# Step 1: Fetch the web page HTML
-# -------------------------------
+def fetch_html(url: str) -> str:
+    """Fetch HTML content from the given URL."""
+    response = requests.get(url)
+    response.raise_for_status()  # Raise an error if request failed
+    return response.text
 
-url = "https://engineering.yale.edu/academic-study/departments/computer-science/research-areas"
-response = requests.get(url)
-html = response.text  # Get raw HTML as string
+def save_raw_html(html: str, output_path: str):
+    """Save raw HTML to a local file for reproducibility/debugging."""
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"✅ Saved raw HTML to {output_path}")
 
-# -------------------------------
-# Step 2: Parse HTML with BeautifulSoup
-# -------------------------------
+def parse_research_areas(html: str) -> list:
+    """Extract research areas and associated faculty from Yale CS page."""
+    soup = BeautifulSoup(html, "html.parser")
+    blocks = soup.find_all("div", class_="side-nav-blocks")
+    print(f"Found {len(blocks)} research areas.")
 
-soup = BeautifulSoup(html, "html.parser")
+    data = []
 
-# -------------------------------
-# Step 3: Find all research area blocks
-# -------------------------------
+    for block in blocks:
+        title_tag = block.find("h2")
+        if not title_tag:
+            continue
 
-blocks = soup.find_all("div", class_="side-nav-blocks")
-print(f"Found {len(blocks)} research areas.")
+        title = title_tag.get_text(strip=True)
 
-data = []
+        if re.match(r"^\d{4}\s*[-–]\s*\d{4}$", title):
+            continue  # Skip technical report years
 
-for block in blocks:
-    # -------------------------------
-    # Extract research area title
-    # -------------------------------
-    title_tag = block.find("h2")
-    if not title_tag:
-        continue
+        # Extract description paragraphs
+        description_paragraphs = []
+        for sibling in title_tag.find_next_siblings():
+            if sibling.name == "h3" and "Faculty" in sibling.get_text():
+                break
+            if sibling.name == "p":
+                description_paragraphs.append(sibling.get_text(strip=True))
 
-    title = title_tag.get_text(strip=True)
+        description = " ".join(description_paragraphs)
 
-    # Skip "technical report" blocks with date ranges like "2025–2020"
-    if re.match(r"^\d{4}\s*[-–]\s*\d{4}$", title):
-        continue
+        # Extract professors
+        professors = []
+        faculty_tag = block.find("div", class_="faculty-member-list")
+        if faculty_tag:
+            for tag in faculty_tag.find_all("a"):
+                href = tag.get("href")
+                if href.startswith("/"):
+                    href = "https://engineering.yale.edu" + href
+                p = tag.find("p")
+                if p:
+                    name = p.find("strong").get_text(strip=True)
+                    title_text = p.get_text(strip=True).replace(name, "").strip()
+                    professors.append({
+                        "name": name,
+                        "title": title_text,
+                        "profile_url": href
+                    })
 
-    # -------------------------------
-    # Extract area description
-    # -------------------------------
+        data.append({
+            "area": title,
+            "description": description,
+            "professors": professors
+        })
 
-    description_paragraphs = []
+    return data
 
-    # Iterate over siblings after <h2> until "Associated Faculty" section
-    for sibling in title_tag.find_next_siblings():
-        if sibling.name == "h3" and "Faculty" in sibling.get_text():
-            break
-        if sibling.name == "p":
-            text = sibling.get_text(strip=True)
-            description_paragraphs.append(text)
+def save_json(data: list, output_path: str):
+    """Save extracted data to a JSON file."""
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"✅ Saved {len(data)} research areas to {output_path}")
 
-    # Join all paragraphs into one string
-    description = " ".join(description_paragraphs)
+# ----------- MAIN PIPELINE -------------------
 
-    # -------------------------------
-    # Extract associated professors
-    # -------------------------------
+if __name__ == "__main__":
+    url = "https://engineering.yale.edu/academic-study/departments/computer-science/research-areas"
+    html = fetch_html(url)
 
-    professors = []
-
-    faculty_tag = block.find("div", class_="faculty-member-list")
-    if faculty_tag:
-        a_tags = faculty_tag.find_all("a", class_="faculty-link")
-
-        for tag in a_tags:
-            # Get profile link (make absolute if needed)
-            href = tag["href"]
-            if href.startswith("/"):
-                href = "https://engineering.yale.edu" + href
-
-            # Get professor name and title from <p> tag
-            p = tag.find("p")
-            name = p.find("strong").get_text(strip=True)
-            title_text = p.get_text(strip=True).replace(name, "").strip()
-
-            professors.append({
-                "name": name,
-                "title": title_text,
-                "profile_url": href
-            })
-
-    # -------------------------------
-    # Append this research area to results
-    # -------------------------------
-
-    data.append({
-        "area": title,
-        "description": description,
-        "professors": professors
-    })
-
-# -------------------------------
-# Step 4: Save output to JSON file
-# -------------------------------
-
-output_path = "data/research_areas.json"
-
-with open(output_path, "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=2, ensure_ascii=False)
-
-print(f"\n✅ Saved {len(data)} research areas to {output_path}")
+    save_raw_html(html, "data/raw/research_areas.html")
+    data = parse_research_areas(html)
+    save_json(data, "data/research_areas.json")
