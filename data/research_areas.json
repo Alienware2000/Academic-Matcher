@@ -1,66 +1,513 @@
 [
   {
     "area": "Algorithms & Complexity Theory",
-    "description": "Yale's research inAlgorithms and Complexity Theoryis characterized by its breadth and depth, advancing our understanding of the fundamental power and limits of computation while creating innovative algorithms to empower society. The department's efforts in this field are broad-ranging and dynamic, encompassing a wide array of theoretical aspects of computing. Our researchers are making significant contributions in diverse areas such as approximation algorithms, combinatorial algorithms, and data science. The department is also at the forefront of developing distributed algorithms and exploring the theoretical underpinnings of machine learning. Additionally, our faculty are investigating the theoretical aspects of data networking and delving into the complex theories of privacy, security, and accountability in computational systems. A hallmark of Yale's approach to theoretical computer science is its interdisciplinary nature. Members of the theory group regularly collaborate with colleagues across various areas of Computer Science, including artificial intelligence, databases, networking, and numerical analysis. This collaborative spirit also extends beyond the department, with researchers engaging in joint projects with other disciplines such as biology, engineering, law, mathematics, and data science and statistics. This cross-pollination of ideas not only enriches the theoretical work but also ensures its relevance and applicability to real-world challenges, bridging the gap between abstract concepts and practical solutions."
+    "description": "Yale's research inAlgorithms and Complexity Theoryis characterized by its breadth and depth, advancing our understanding of the fundamental power and limits of computation while creating innovative algorithms to empower society. The department's efforts in this field are broad-ranging and dynamic, encompassing a wide array of theoretical aspects of computing. Our researchers are making significant contributions in diverse areas such as approximation algorithms, combinatorial algorithms, and data science. The department is also at the forefront of developing distributed algorithms and exploring the theoretical underpinnings of machine learning. Additionally, our faculty are investigating the theoretical aspects of data networking and delving into the complex theories of privacy, security, and accountability in computational systems. A hallmark of Yale's approach to theoretical computer science is its interdisciplinary nature. Members of the theory group regularly collaborate with colleagues across various areas of Computer Science, including artificial intelligence, databases, networking, and numerical analysis. This collaborative spirit also extends beyond the department, with researchers engaging in joint projects with other disciplines such as biology, engineering, law, mathematics, and data science and statistics. This cross-pollination of ideas not only enriches the theoretical work but also ensures its relevance and applicability to real-world challenges, bridging the gap between abstract concepts and practical solutions.",
+    "professors": [
+      {
+        "name": "James Aspnes",
+        "title": "Harold W. Cheel Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/james-aspnes"
+      },
+      {
+        "name": "Yang Cai",
+        "title": "Associate Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/yang-cai"
+      },
+      {
+        "name": "Joan Feigenbaum",
+        "title": "Grace Murray Hopper Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/joan-feigenbaum"
+      },
+      {
+        "name": "Michael Fischer",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/michael-fischer"
+      },
+      {
+        "name": "Anna C. Gilbert",
+        "title": "John C. Malone Professor of Electrical & Computer Engineering",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/anna-c-gilbert"
+      },
+      {
+        "name": "Daniel Spielman",
+        "title": "Sterling Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/daniel-spielman"
+      },
+      {
+        "name": "Nisheeth Vishnoi",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/nisheeth-vishnoi"
+      },
+      {
+        "name": "Andre Wibisono",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/andre-wibisono"
+      },
+      {
+        "name": "Manolis Zampetakis",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/manolis-zampetakis"
+      }
+    ]
   },
   {
     "area": "Artificial Intelligence & Machine Learning",
-    "description": "Yale's computer science department conducts innovative research in Artificial Intelligence and Machine Learning across multiple domains. Our researchers are advancing computer vision, robotics, and depth perception, developing systems that can learn and adapt to new environments without human intervention. This work includes creating robust perception systems for autonomous navigation and manipulation, as well as designing approaches for learning from multiple data modalities. The department is also making significant contributions to the theoretical aspects of AI, exploring multi-agent machine learning, equilibrium computation, and the interface between AI and economics. Researchers are developing novel machine learning techniques for extracting patterns from scientific data, particularly in biomedical applications. These approaches span applied math, deep learning, data geometry, topology, manifold learning, and graph signal processing. Our faculty are enhancing the field of graph neural networks and geometric representation learning, with applications ranging from social networks to biology. Additionally, the department is exploring the use of AI in physical simulations, knowledge graphs, and large-scale data processing for industry applications. The department has a strong focus on human-robot interaction, developing models that can reason about individual, pairwise, and group factors in multi-party interactions. This includes creating robot behaviors that can shape and facilitate both human-robot and human-human interactions. Complementing these technical advancements, Yale researchers are actively engaged in addressing the ethical implications of AI, exploring issues such as genomic privacy, and applying AI techniques to empower underserved communities worldwide. The department also contributes to interdisciplinary research, applying computational modeling and AI to areas such as neuroscience, color perception, and social sciences."
+    "description": "Yale's computer science department conducts innovative research in Artificial Intelligence and Machine Learning across multiple domains. Our researchers are advancing computer vision, robotics, and depth perception, developing systems that can learn and adapt to new environments without human intervention. This work includes creating robust perception systems for autonomous navigation and manipulation, as well as designing approaches for learning from multiple data modalities. The department is also making significant contributions to the theoretical aspects of AI, exploring multi-agent machine learning, equilibrium computation, and the interface between AI and economics. Researchers are developing novel machine learning techniques for extracting patterns from scientific data, particularly in biomedical applications. These approaches span applied math, deep learning, data geometry, topology, manifold learning, and graph signal processing. Our faculty are enhancing the field of graph neural networks and geometric representation learning, with applications ranging from social networks to biology. Additionally, the department is exploring the use of AI in physical simulations, knowledge graphs, and large-scale data processing for industry applications. The department has a strong focus on human-robot interaction, developing models that can reason about individual, pairwise, and group factors in multi-party interactions. This includes creating robot behaviors that can shape and facilitate both human-robot and human-human interactions. Complementing these technical advancements, Yale researchers are actively engaged in addressing the ethical implications of AI, exploring issues such as genomic privacy, and applying AI techniques to empower underserved communities worldwide. The department also contributes to interdisciplinary research, applying computational modeling and AI to areas such as neuroscience, color perception, and social sciences.",
+    "professors": [
+      {
+        "name": "Yang Cai",
+        "title": "Associate Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/yang-cai"
+      },
+      {
+        "name": "Arman Cohan",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/arman-cohan"
+      },
+      {
+        "name": "Ronald Coifman",
+        "title": "Sterling Professor of Electrical & Computer Engineering",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ronald-coifman"
+      },
+      {
+        "name": "Tesca Fitzgerald",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/tesca-fitzgerald"
+      },
+      {
+        "name": "Smita Krishnaswamy",
+        "title": "Associate Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/smita-krishnaswamy"
+      },
+      {
+        "name": "Alex Lew",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/alex-lew"
+      },
+      {
+        "name": "Sohee Park",
+        "title": "Lecturer of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/sohee-park"
+      },
+      {
+        "name": "Daniel Rakita",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/daniel-rakita"
+      },
+      {
+        "name": "Brian Scassellati",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/brian-scassellati"
+      },
+      {
+        "name": "Daniel Spielman",
+        "title": "Sterling Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/daniel-spielman"
+      },
+      {
+        "name": "Marynel Vázquez",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/marynel-vazquez"
+      },
+      {
+        "name": "Nisheeth Vishnoi",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/nisheeth-vishnoi"
+      },
+      {
+        "name": "Andre Wibisono",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/andre-wibisono"
+      },
+      {
+        "name": "Alex Wong",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/alex-wong"
+      },
+      {
+        "name": "Rex (Zhitao) Ying",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/rex-zhitao-ying"
+      },
+      {
+        "name": "Manolis Zampetakis",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/manolis-zampetakis"
+      },
+      {
+        "name": "Steven Zucker",
+        "title": "David & Lucile Packard Professor of Biomedical Engineering & Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/steven-zucker"
+      }
+    ]
   },
   {
     "area": "Computer Architecture",
-    "description": "Our computer science faculty are pioneering advancements in computer architecture, designing the interface between software and hardware for systems ranging from large-scale AI and cloud services to safety-critical embedded systems and IoT devices. Researchers are developing innovative solutions for highly heterogeneous hardware architectures, offering significant performance improvements while tackling programmability challenges. Their groundbreaking contributions to virtual memory abstraction have already been integrated into commercial chips and operating systems. We are also developing ultra-low-power architectures for implantable brain-computer interfaces, aiming to treat neurological disorders and advance brain sciences. Simultaneously, our faculty are making significant strides in quantum computing architecture. Recognizing the challenges posed by noisy and small-scale quantum systems, researchers are designing innovative techniques to improve the efficiency of quantum algorithms and software. This work involves constructing novel error-correcting protocols and developing resource-efficient, error-resilient algorithms. These diverse research efforts are laying the groundwork for next-generation processors that meet multifaceted goals including performance, power efficiency, temperature management, reliability, and accuracy. By bridging theoretical concepts with practical implementation, our researchers are shaping the future of computing systems across all scales."
+    "description": "Our computer science faculty are pioneering advancements in computer architecture, designing the interface between software and hardware for systems ranging from large-scale AI and cloud services to safety-critical embedded systems and IoT devices. Researchers are developing innovative solutions for highly heterogeneous hardware architectures, offering significant performance improvements while tackling programmability challenges. Their groundbreaking contributions to virtual memory abstraction have already been integrated into commercial chips and operating systems. We are also developing ultra-low-power architectures for implantable brain-computer interfaces, aiming to treat neurological disorders and advance brain sciences. Simultaneously, our faculty are making significant strides in quantum computing architecture. Recognizing the challenges posed by noisy and small-scale quantum systems, researchers are designing innovative techniques to improve the efficiency of quantum algorithms and software. This work involves constructing novel error-correcting protocols and developing resource-efficient, error-resilient algorithms. These diverse research efforts are laying the groundwork for next-generation processors that meet multifaceted goals including performance, power efficiency, temperature management, reliability, and accuracy. By bridging theoretical concepts with practical implementation, our researchers are shaping the future of computing systems across all scales.",
+    "professors": [
+      {
+        "name": "Abhishek Bhattacharjee",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/abhishek-bhattacharjee"
+      },
+      {
+        "name": "Yongshan Ding",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/yongshan-ding"
+      }
+    ]
   },
   {
     "area": "Computer Graphics",
-    "description": "Research incomputer graphics at Yaleincludes sketching, alternative design techniques, texture models, the role of models of human perception in computer graphics, recovering shape and reflectance from images, computer animation, simulation, and geometry processing. Applications that drive this work are architectural design, cultural heritage documentation and analysis, the study of biological forms, as well as traditional targets such as feature films, games, and other visual media. Computer graphics is one of the disciplines withinYale C2(Creative Consilience of Computing and the Arts). Computer graphics is used extensively in a wide range of domains—from feature film and games to medical visualization and financial analysis. However impressive the growth of computer graphics applications has been over the past 40 years, the goal of easily authoring computer graphics models input remains elusive. At Yale, the research in modeling includes sketching systems for early conceptual design and the capture and editing of digital models of existing physical objects at a range of scales—from entire buildings to individual objects. Computer graphics models need to include material appearance properties as well as geometry. Unfortunately, the models widely used in computer graphics assume that the materials are both pristine and immutable, even though real materials are neither. The goal of research on material and texture models at Yale is to devise new material representations and expressive interfaces for editing such representations, to develop novel methods to simulate materials and the processes that affect their appearance, and to physically measure the input required for material models. Realistic, expressive motion remains an ongoing challenge in computer graphics. In order to generate animations that are both visually convincing and narratively compelling, the animation research at Yale examines new methods for computing the physics that underlie natural phenomena such as rising smoke, splashing water, and the forces that form the characteristic shapes of skin and muscle under human movement. While realism is important, expressivity and artistic directability play an equally key role, and distilling the exact parameters that capture an effective performance remains an open area of research."
+    "description": "Research incomputer graphics at Yaleincludes sketching, alternative design techniques, texture models, the role of models of human perception in computer graphics, recovering shape and reflectance from images, computer animation, simulation, and geometry processing. Applications that drive this work are architectural design, cultural heritage documentation and analysis, the study of biological forms, as well as traditional targets such as feature films, games, and other visual media. Computer graphics is one of the disciplines withinYale C2(Creative Consilience of Computing and the Arts). Computer graphics is used extensively in a wide range of domains—from feature film and games to medical visualization and financial analysis. However impressive the growth of computer graphics applications has been over the past 40 years, the goal of easily authoring computer graphics models input remains elusive. At Yale, the research in modeling includes sketching systems for early conceptual design and the capture and editing of digital models of existing physical objects at a range of scales—from entire buildings to individual objects. Computer graphics models need to include material appearance properties as well as geometry. Unfortunately, the models widely used in computer graphics assume that the materials are both pristine and immutable, even though real materials are neither. The goal of research on material and texture models at Yale is to devise new material representations and expressive interfaces for editing such representations, to develop novel methods to simulate materials and the processes that affect their appearance, and to physically measure the input required for material models. Realistic, expressive motion remains an ongoing challenge in computer graphics. In order to generate animations that are both visually convincing and narratively compelling, the animation research at Yale examines new methods for computing the physics that underlie natural phenomena such as rising smoke, splashing water, and the forces that form the characteristic shapes of skin and muscle under human movement. While realism is important, expressivity and artistic directability play an equally key role, and distilling the exact parameters that capture an effective performance remains an open area of research.",
+    "professors": [
+      {
+        "name": "Julie Dorsey",
+        "title": "Frederick W. Beinecke Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/julie-dorsey"
+      },
+      {
+        "name": "Theodore Kim",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/theodore-kim"
+      },
+      {
+        "name": "Holly Rushmeier",
+        "title": "John C. Malone Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/holly-rushmeier"
+      }
+    ]
   },
   {
     "area": "Computer Music",
-    "description": "Yale's Computer Music research represents a vibrant intersection of technology and artistry within the Computer Science Department. This interdisciplinary field combines technical innovation with creative expression, building upon a strong foundation in functional programming and music representation. The department offers a comprehensive range of courses that cover the spectrum of computer music, from high-level music representation and algorithmic composition to low-level audio processing and sound synthesis. These offerings include explorations in live coding, musical analysis, MIDI and OSC protocols, and virtual instrument design. The curriculum also extends to creative applications of embedded systems, bridging the gap between computer science and musical creativity. SuperCollider and Python serve as the primary programming languages in these courses, providing students with powerful tools for musical experimentation and innovation. Research in this area is broad and dynamic, encompassing open music technologies, improvisational electronic music, analog electronic instrument design, live coding, and experimental music programming techniques. More details and current work can be found atopenmusicinitiative.org, which exists in the broader context ofYale C2(Creative Consilience of Computing and the Arts)."
+    "description": "Yale's Computer Music research represents a vibrant intersection of technology and artistry within the Computer Science Department. This interdisciplinary field combines technical innovation with creative expression, building upon a strong foundation in functional programming and music representation. The department offers a comprehensive range of courses that cover the spectrum of computer music, from high-level music representation and algorithmic composition to low-level audio processing and sound synthesis. These offerings include explorations in live coding, musical analysis, MIDI and OSC protocols, and virtual instrument design. The curriculum also extends to creative applications of embedded systems, bridging the gap between computer science and musical creativity. SuperCollider and Python serve as the primary programming languages in these courses, providing students with powerful tools for musical experimentation and innovation. Research in this area is broad and dynamic, encompassing open music technologies, improvisational electronic music, analog electronic instrument design, live coding, and experimental music programming techniques. More details and current work can be found atopenmusicinitiative.org, which exists in the broader context ofYale C2(Creative Consilience of Computing and the Arts).",
+    "professors": [
+      {
+        "name": "Scott Petersen",
+        "title": "Senior Lecturer of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/scott-petersen"
+      }
+    ]
   },
   {
     "area": "Computer Networks",
-    "description": "Yale's Computer Networks research focuses on improving essential network system properties such as efficiency, robustness, and programmability. The department's work spans all networking layers, addressing critical challenges in modern network infrastructures that support our increasingly connected society. A key area of research is Application-Network Integration (ANI), where Yale plays a leading role. This work has led to the establishment of the Application-Layer Traffic Optimization (ALTO) Working Group and the ALTO Protocol, the first Internet standard supporting joint application and network interactions. Current research extends to ANI in 5G cellular networks, application-defined networking, and joint network-application programmable networking. The department is also at the forefront of developing highly robust and flexible networking architectures, designing novel control systems based on multiple control plane composition to achieve unprecedented levels of network reliability and programmability. This research has applications in tactical networks, large cloud data centers, and mobile networks. Additionally, Yale researchers are making significant contributions to Software-Defined Networking (SDN) and programmable networking applications, developing high-level programming languages for SDN and exploring novel applications of programmable data paths. In the realm of mobile networks, the department is leading efforts in the virtualization of resources across the entire network stack and the development of massive MIMO technology, contributing to the transformation of mobile network infrastructures towards more flexible, efficient, and powerful systems."
+    "description": "Yale's Computer Networks research focuses on improving essential network system properties such as efficiency, robustness, and programmability. The department's work spans all networking layers, addressing critical challenges in modern network infrastructures that support our increasingly connected society. A key area of research is Application-Network Integration (ANI), where Yale plays a leading role. This work has led to the establishment of the Application-Layer Traffic Optimization (ALTO) Working Group and the ALTO Protocol, the first Internet standard supporting joint application and network interactions. Current research extends to ANI in 5G cellular networks, application-defined networking, and joint network-application programmable networking. The department is also at the forefront of developing highly robust and flexible networking architectures, designing novel control systems based on multiple control plane composition to achieve unprecedented levels of network reliability and programmability. This research has applications in tactical networks, large cloud data centers, and mobile networks. Additionally, Yale researchers are making significant contributions to Software-Defined Networking (SDN) and programmable networking applications, developing high-level programming languages for SDN and exploring novel applications of programmable data paths. In the realm of mobile networks, the department is leading efforts in the virtualization of resources across the entire network stack and the development of massive MIMO technology, contributing to the transformation of mobile network infrastructures towards more flexible, efficient, and powerful systems.",
+    "professors": [
+      {
+        "name": "Anurag Khandelwal",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/anurag-khandelwal"
+      },
+      {
+        "name": "Sohee Park",
+        "title": "Lecturer of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/sohee-park"
+      },
+      {
+        "name": "Robert Soulé",
+        "title": "Associate Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/robert-soule"
+      },
+      {
+        "name": "Y. Richard Yang",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/y-richard-yang"
+      },
+      {
+        "name": "Lin Zhong",
+        "title": "Joseph C. Tsai Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/lin-zhong"
+      }
+    ]
   },
   {
     "area": "Database Systems",
-    "description": "Database systems provide an environment for storage and retrieval of both structured and semi-structured data. Such systems were originally designed for use in business-type applications. Today, however, they are being utilized in many other application domains, including scientific computing, networking, and bioinformatics. Research topics at Yale include transaction management, data warehousing, Web-scale databases, real-time systems, multimedia systems, approximate queries, and data mining."
+    "description": "Database systems provide an environment for storage and retrieval of both structured and semi-structured data. Such systems were originally designed for use in business-type applications. Today, however, they are being utilized in many other application domains, including scientific computing, networking, and bioinformatics. Research topics at Yale include transaction management, data warehousing, Web-scale databases, real-time systems, multimedia systems, approximate queries, and data mining.",
+    "professors": [
+      {
+        "name": "Abraham Silberschatz",
+        "title": "Sidney J. Weinberg Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/abraham-silberschatz"
+      },
+      {
+        "name": "Robert Soulé",
+        "title": "Associate Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/robert-soule"
+      }
+    ]
   },
   {
     "area": "Distributed Computing",
-    "description": "Yale's research in Distributed Computing encompasses a wide range of topics, from theoretical foundations to practical applications, addressing the challenges of systems involving multiple loosely-coupled components. The department's work in this field is characterized by its depth and breadth, tackling issues of nondeterminism and unpredictability inherent in distributed systems. On the theoretical side, Yale researchers have made pioneering contributions to the understanding of distributed algorithms, employing adversary arguments to prove lower bounds and impossibility results. This work has significantly shaped the field's research direction. The department also emphasizes the use of randomization in solving fundamental problems in distributed computing, developing and analyzing algorithms that leverage probabilistic techniques to overcome deterministic limitations. In the realm of applied research, Yale's efforts span programming language support for distributed computing and the application of distributed systems techniques to parallel programming. This includes the development of novel abstractions like the Atomic Distributed Object (ADO) model, which simplifies the verification of consensus protocols and their extensions. The department is at the forefront of applying formal verification technologies to build trustworthy ecosystems for modern distributed applications, including smart contracts and blockchain systems. Researchers are also working on innovative coordination languages and tools that provide virtual spaces for process communication, simplifying information management tasks and freeing users from traditional clerical duties imposed by filesystems. Yale researchers are making significant strides in distributed cloud systems, tackling challenges related to processing, storing, and serving big data. This includes exploring innovative designs for distributed shared memory abstractions and resource management in emerging serverless and disaggregated data center architectures. The department's work also extends to transaction management techniques for distributed database systems and multidatabase systems. Through these diverse research efforts, Yale continues to contribute to the advancement of distributed computing, developing solutions that address the complex challenges of modern distributed systems and shaping the future of this critical field."
+    "description": "Yale's research in Distributed Computing encompasses a wide range of topics, from theoretical foundations to practical applications, addressing the challenges of systems involving multiple loosely-coupled components. The department's work in this field is characterized by its depth and breadth, tackling issues of nondeterminism and unpredictability inherent in distributed systems. On the theoretical side, Yale researchers have made pioneering contributions to the understanding of distributed algorithms, employing adversary arguments to prove lower bounds and impossibility results. This work has significantly shaped the field's research direction. The department also emphasizes the use of randomization in solving fundamental problems in distributed computing, developing and analyzing algorithms that leverage probabilistic techniques to overcome deterministic limitations. In the realm of applied research, Yale's efforts span programming language support for distributed computing and the application of distributed systems techniques to parallel programming. This includes the development of novel abstractions like the Atomic Distributed Object (ADO) model, which simplifies the verification of consensus protocols and their extensions. The department is at the forefront of applying formal verification technologies to build trustworthy ecosystems for modern distributed applications, including smart contracts and blockchain systems. Researchers are also working on innovative coordination languages and tools that provide virtual spaces for process communication, simplifying information management tasks and freeing users from traditional clerical duties imposed by filesystems. Yale researchers are making significant strides in distributed cloud systems, tackling challenges related to processing, storing, and serving big data. This includes exploring innovative designs for distributed shared memory abstractions and resource management in emerging serverless and disaggregated data center architectures. The department's work also extends to transaction management techniques for distributed database systems and multidatabase systems. Through these diverse research efforts, Yale continues to contribute to the advancement of distributed computing, developing solutions that address the complex challenges of modern distributed systems and shaping the future of this critical field.",
+    "professors": [
+      {
+        "name": "James Aspnes",
+        "title": "Harold W. Cheel Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/james-aspnes"
+      },
+      {
+        "name": "Michael Fischer",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/michael-fischer"
+      },
+      {
+        "name": "Ben Fisch",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ben-fisch"
+      },
+      {
+        "name": "David Gelernter",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/david-gelernter"
+      },
+      {
+        "name": "Anurag Khandelwal",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/anurag-khandelwal"
+      },
+      {
+        "name": "Zhong Shao",
+        "title": "Thomas L. Kempner Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/zhong-shao"
+      },
+      {
+        "name": "Abraham Silberschatz",
+        "title": "Sidney J. Weinberg Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/abraham-silberschatz"
+      }
+    ]
   },
   {
     "area": "Natural Language Processing",
-    "description": "Our research focuses on developing robust evaluation frameworks to assess the capabilities and limitations of large language models (LLMs) in both general and specialized, high-stakes domains. We evaluate their performance in instruction-following tasks and critical fields such as science, finance, law, and healthcare, where accuracy and nuanced understanding are essential. By assessing their ability to generate factual summaries, facilitate professional decision-making, and enhance knowledge accessibility, we aim to ensure LLMs meet the demands of domain-specific applications. Example applications include generating factual summaries under specific domains for specific user needs and queries, curating professional analyses to facilitate decision-making, and enabling knowledge access with high accuracy and efficiency, etc. Additionally, we work on post-training and adaptation techniques to enhance LLM instruction-following capabilities, improving preference optimization algorithms and using LLMs for self-evaluation and supervision. We also focus on adapting LLMs to unfamiliar or out-of-domain tasks, leveraging efficient training and limited in-domain corpora to extend their real-world utility. Our efforts include developing continual pre-training methods, large-scale data synthesis, and domain-specific post-training to improve adaptability. Beyond evaluation and adaptation, we explore mechanistic interpretability techniques to better understand how LLMs process information and make decisions. We investigate their potential to perform logical reasoning and solve mathematical problems, enhancing their ability to handle structured problem-solving. This includes building new benchmarks, designing evaluation paradigms, and training process-reward models to improve LLMs' logical reasoning. We also develop strategies for multi-document reasoning, improving retrieval systems and synthesis capabilities, as seen in MDCure, which enhances multi-document instruction tuning, and DocMath-Eval, which evaluates LLM performance in financial math reasoning. Our research extends to scientific applications, where we create specialized language models, embedding techniques, and benchmarks to enhance LLM understanding of technical knowledge. Projects such as SciRIFF support instruction-following for scientific literature, improving tasks like table extraction, cross-document summarization, and context-grounded reasoning. Through these initiatives, we aim to make LLMs more transparent, adaptable, and effective across diverse domains."
+    "description": "Our research focuses on developing robust evaluation frameworks to assess the capabilities and limitations of large language models (LLMs) in both general and specialized, high-stakes domains. We evaluate their performance in instruction-following tasks and critical fields such as science, finance, law, and healthcare, where accuracy and nuanced understanding are essential. By assessing their ability to generate factual summaries, facilitate professional decision-making, and enhance knowledge accessibility, we aim to ensure LLMs meet the demands of domain-specific applications. Example applications include generating factual summaries under specific domains for specific user needs and queries, curating professional analyses to facilitate decision-making, and enabling knowledge access with high accuracy and efficiency, etc. Additionally, we work on post-training and adaptation techniques to enhance LLM instruction-following capabilities, improving preference optimization algorithms and using LLMs for self-evaluation and supervision. We also focus on adapting LLMs to unfamiliar or out-of-domain tasks, leveraging efficient training and limited in-domain corpora to extend their real-world utility. Our efforts include developing continual pre-training methods, large-scale data synthesis, and domain-specific post-training to improve adaptability. Beyond evaluation and adaptation, we explore mechanistic interpretability techniques to better understand how LLMs process information and make decisions. We investigate their potential to perform logical reasoning and solve mathematical problems, enhancing their ability to handle structured problem-solving. This includes building new benchmarks, designing evaluation paradigms, and training process-reward models to improve LLMs' logical reasoning. We also develop strategies for multi-document reasoning, improving retrieval systems and synthesis capabilities, as seen in MDCure, which enhances multi-document instruction tuning, and DocMath-Eval, which evaluates LLM performance in financial math reasoning. Our research extends to scientific applications, where we create specialized language models, embedding techniques, and benchmarks to enhance LLM understanding of technical knowledge. Projects such as SciRIFF support instruction-following for scientific literature, improving tasks like table extraction, cross-document summarization, and context-grounded reasoning. Through these initiatives, we aim to make LLMs more transparent, adaptable, and effective across diverse domains.",
+    "professors": [
+      {
+        "name": "Arman Cohan",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/arman-cohan"
+      },
+      {
+        "name": "Alex Lew",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/alex-lew"
+      }
+    ]
   },
   {
     "area": "Operating Systems",
-    "description": "Yale researchers are addressing the evolving challenges of the ubiquitous computing era, where operating systems must manage a user's information and computation across numerous devices and platforms. The department is developing innovative operating system architectures, application environments, and security frameworks to meet these challenges across a wide spectrum of computing environments, including IoT devices, cyber-physical systems, cloud computers, and blockchain ecosystems. A key focus of Yale's research is on next-generation operating systems for emerging heterogeneous computer systems. As Moore's Law and Dennard scaling wane, and AI continues to advance, researchers are exploring new OS abstractions and hardware/software interfaces to make complex, heterogeneous systems more programmable. This work encompasses systems that integrate various accelerators (GPUs, TPUs, neural network hardware, DSPs) and heterogeneous memory devices. Additionally, the department is investigating novel OS stack designs for serverless and disaggregated architectures, aiming to balance application performance with resource elasticity in modern data centers. Their efforts involve developing network-centric designs that place resource management and access functionality in the data center network fabric. Yale is also at the forefront of developing formally verified operating systems for modern heterogeneous platforms. Researchers have made significant breakthroughs in constructing hacker-resistant concurrent OS kernels, developing novel methodologies for specifying, programming, verifying, and composing abstraction layers. This work has led to the creation of CertiKOS, the world's first functionally correct, general-purpose concurrent OS kernel with fine-grained locking. Furthermore, the department is examining foundational assumptions made by modern OSes in the context of mobile and edge computing. Their research extends to the use of safe languages like Rust to enforce correctness invariants at compile-time, while also investigating both incremental changes to existing OSes and clean-slate designs to enhance security and privacy in operating systems."
+    "description": "Yale researchers are addressing the evolving challenges of the ubiquitous computing era, where operating systems must manage a user's information and computation across numerous devices and platforms. The department is developing innovative operating system architectures, application environments, and security frameworks to meet these challenges across a wide spectrum of computing environments, including IoT devices, cyber-physical systems, cloud computers, and blockchain ecosystems. A key focus of Yale's research is on next-generation operating systems for emerging heterogeneous computer systems. As Moore's Law and Dennard scaling wane, and AI continues to advance, researchers are exploring new OS abstractions and hardware/software interfaces to make complex, heterogeneous systems more programmable. This work encompasses systems that integrate various accelerators (GPUs, TPUs, neural network hardware, DSPs) and heterogeneous memory devices. Additionally, the department is investigating novel OS stack designs for serverless and disaggregated architectures, aiming to balance application performance with resource elasticity in modern data centers. Their efforts involve developing network-centric designs that place resource management and access functionality in the data center network fabric. Yale is also at the forefront of developing formally verified operating systems for modern heterogeneous platforms. Researchers have made significant breakthroughs in constructing hacker-resistant concurrent OS kernels, developing novel methodologies for specifying, programming, verifying, and composing abstraction layers. This work has led to the creation of CertiKOS, the world's first functionally correct, general-purpose concurrent OS kernel with fine-grained locking. Furthermore, the department is examining foundational assumptions made by modern OSes in the context of mobile and edge computing. Their research extends to the use of safe languages like Rust to enforce correctness invariants at compile-time, while also investigating both incremental changes to existing OSes and clean-slate designs to enhance security and privacy in operating systems.",
+    "professors": [
+      {
+        "name": "Abhishek Bhattacharjee",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/abhishek-bhattacharjee"
+      },
+      {
+        "name": "Anurag Khandelwal",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/anurag-khandelwal"
+      },
+      {
+        "name": "Zhong Shao",
+        "title": "Thomas L. Kempner Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/zhong-shao"
+      },
+      {
+        "name": "Abraham Silberschatz",
+        "title": "Sidney J. Weinberg Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/abraham-silberschatz"
+      },
+      {
+        "name": "Robert Soulé",
+        "title": "Associate Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/robert-soule"
+      },
+      {
+        "name": "Lin Zhong",
+        "title": "Joseph C. Tsai Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/lin-zhong"
+      }
+    ]
   },
   {
     "area": "Programming Languages & Compilers",
-    "description": "Yale's research in Programming Languages and Verification is focused on creating expressive, efficient, flexible, secure, and reliable programming environments for future information, computation, and communication systems. The department approaches this challenge from multiple angles, including language design, formal methods, compiler implementation, programming environments, and run-time systems. A primary objective of this research is to enable the construction of secure, error-free programs and to develop frameworks that facilitate this goal for other developers. One key area of research involves the development of certified system software, such as OS kernels and hypervisors. Researchers are exploring new language-based technologies to create software that comes with rigorous, machine-checkable proofs of its correctness with respect to specific requirements. This work extends to investigating optimal OS kernel structures for resilience, extensibility, and security, as well as developing new programming languages and environments suitable for implementing such low-level certified programs. The department is also advancing formal methods to support these new languages and make certified programming both practical and scalable. Another significant focus is on software synthesis and verification, aimed at detecting and preventing software errors that cost the global economy trillions annually. This includes projects on automatically learning specifications for complex, unstructured languages, synthesizing Functional Reactive Programming programs from logical specifications, and developing modular verification engines for functional programming languages. Additionally, researchers are exploring privacy-preserving formal methods, heterogeneous computing systems, and the broader field of software ensemble research. This latter area encompasses the study of programs built out of many separate, coordinated activities, including parallel and distributed programs, and draws connections between software ensembles and naturally occurring systems in economics, biology, and physics."
+    "description": "Yale's research in Programming Languages and Verification is focused on creating expressive, efficient, flexible, secure, and reliable programming environments for future information, computation, and communication systems. The department approaches this challenge from multiple angles, including language design, formal methods, compiler implementation, programming environments, and run-time systems. A primary objective of this research is to enable the construction of secure, error-free programs and to develop frameworks that facilitate this goal for other developers. One key area of research involves the development of certified system software, such as OS kernels and hypervisors. Researchers are exploring new language-based technologies to create software that comes with rigorous, machine-checkable proofs of its correctness with respect to specific requirements. This work extends to investigating optimal OS kernel structures for resilience, extensibility, and security, as well as developing new programming languages and environments suitable for implementing such low-level certified programs. The department is also advancing formal methods to support these new languages and make certified programming both practical and scalable. Another significant focus is on software synthesis and verification, aimed at detecting and preventing software errors that cost the global economy trillions annually. This includes projects on automatically learning specifications for complex, unstructured languages, synthesizing Functional Reactive Programming programs from logical specifications, and developing modular verification engines for functional programming languages. Additionally, researchers are exploring privacy-preserving formal methods, heterogeneous computing systems, and the broader field of software ensemble research. This latter area encompasses the study of programs built out of many separate, coordinated activities, including parallel and distributed programs, and draws connections between software ensembles and naturally occurring systems in economics, biology, and physics.",
+    "professors": [
+      {
+        "name": "Abhishek Bhattacharjee",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/abhishek-bhattacharjee"
+      },
+      {
+        "name": "David Gelernter",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/david-gelernter"
+      },
+      {
+        "name": "Alex Lew",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/alex-lew"
+      },
+      {
+        "name": "Ruzica Piskac",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ruzica-piskac"
+      },
+      {
+        "name": "Zhong Shao",
+        "title": "Thomas L. Kempner Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/zhong-shao"
+      }
+    ]
   },
   {
     "area": "Quantum Computing",
-    "description": "Quantum computing is entering an exciting new era. Small to medium-scale quantum computers are being built and tested; fast quantum algorithms are being discovered for problems that were previously unsolvable on conventional computers. Yale has been at the forefront of that progress, recognized for its leadership in Quantum Science. Through interdisciplinary research and pioneering innovations, our faculty are advancing the frontiers of quantum computing and quantum information science, building upon insights and lessons from classical computer science. Our researchers are tackling the challenges of current quantum computing systems through diverse approaches. One focus area is developing innovative techniques to improve the efficiency of quantum algorithms and software by adapting to hardware architectures. This includes constructing novel error-correcting protocols to ensure robust computation and designing algorithms that are less resource-intensive and more error-resilient, addressing the limitations of today's moderate-sized and error-prone quantum computers. Yale's quantum computing research also extends to the design of quantum algorithms that surpass classical algorithms for optimization and sampling problems, as well as developing algorithms for computational problems arising in quantum mechanics. In parallel, our researchers are leveraging expertise in wireless communication systems to design and experiment with scalable control systems for fully error-corrected, fault-tolerant quantum computers. This work involves controlling hundreds or thousands of qubits in tight synchrony with error correction, drawing parallels between quantum computing hardware and massive MIMO communication systems. The strength of Yale's quantum computing research lies in its interdisciplinary nature. Experts from computer science, applied physics, electrical engineering, chemistry, physics, statistics & data science, mathematics, and beyond collaborate to advance the frontier of quantum computing and information processing.Quantum at Yaleis a showcase of the vibrant research activities here at Yale."
+    "description": "Quantum computing is entering an exciting new era. Small to medium-scale quantum computers are being built and tested; fast quantum algorithms are being discovered for problems that were previously unsolvable on conventional computers. Yale has been at the forefront of that progress, recognized for its leadership in Quantum Science. Through interdisciplinary research and pioneering innovations, our faculty are advancing the frontiers of quantum computing and quantum information science, building upon insights and lessons from classical computer science. Our researchers are tackling the challenges of current quantum computing systems through diverse approaches. One focus area is developing innovative techniques to improve the efficiency of quantum algorithms and software by adapting to hardware architectures. This includes constructing novel error-correcting protocols to ensure robust computation and designing algorithms that are less resource-intensive and more error-resilient, addressing the limitations of today's moderate-sized and error-prone quantum computers. Yale's quantum computing research also extends to the design of quantum algorithms that surpass classical algorithms for optimization and sampling problems, as well as developing algorithms for computational problems arising in quantum mechanics. In parallel, our researchers are leveraging expertise in wireless communication systems to design and experiment with scalable control systems for fully error-corrected, fault-tolerant quantum computers. This work involves controlling hundreds or thousands of qubits in tight synchrony with error correction, drawing parallels between quantum computing hardware and massive MIMO communication systems. The strength of Yale's quantum computing research lies in its interdisciplinary nature. Experts from computer science, applied physics, electrical engineering, chemistry, physics, statistics & data science, mathematics, and beyond collaborate to advance the frontier of quantum computing and information processing.Quantum at Yaleis a showcase of the vibrant research activities here at Yale.",
+    "professors": [
+      {
+        "name": "Yongshan Ding",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/yongshan-ding"
+      },
+      {
+        "name": "Nisheeth Vishnoi",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/nisheeth-vishnoi"
+      },
+      {
+        "name": "Lin Zhong",
+        "title": "Joseph C. Tsai Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/lin-zhong"
+      }
+    ]
   },
   {
     "area": "Social Robotics",
-    "description": "Our robotics research is currently focused on advancing Human-Robot Interaction, with applications spanning education, manufacturing, entertainment, and service domains. The department's work in this field not only aims to create more effective and engaging robotic systems but also uses robots as tools to deepen our understanding of human behavior. A key focus of the research is on building socially engaging and useful robot partners. This includes developing robots that provide social and cognitive support for education and therapy, robots that work collaboratively with human partners on manufacturing tasks, and robots that help explore questions about human social behavior. Researchers employ a wide range of techniques, from computational modeling to clinical methods, to investigate crucial aspects of human-robot interaction such as trust, engagement, and embodiment. The department is also making significant strides in enabling robots to collaborate more effectively with humans in real-world environments. This involves developing algorithms and machine learning models that allow robots to understand and adapt to the intentions and needs of human partners, often in uncertain and dynamic settings. Researchers are exploring how robots can learn from demonstrations and interactions, improving their ability to perform tasks in collaborative and assistive roles. This has important applications in areas like healthcare, household assistance, and industry. Another area of research focuses on robot manipulation and control, particularly in dynamic, unstructured environments. This includes designing motion planning and control strategies that allow robots to perform tasks with greater efficiency and safety, especially when collaborating closely with humans. The work often involves applying optimization and machine learning techniques to improve robot autonomy, precision, and adaptability, with potential applications in fields such as healthcare for tasks like surgery or rehabilitation. Through these diverse research streams, we are advancing the capabilities of robotic systems while also providing critical insights into human behavior and social dynamics in the context of human-robot interaction. This interdisciplinary approach, combining elements of computer science, engineering, psychology, and social sciences, comes together under Yale Engineering'sRobotics for Humanity initiative, where researchers collaborate across departments and beyond engineering to include partnerships across Yale's campus. This comprehensive ecosystem positions Yale at the cutting edge of robotics research, creating robots that can interact naturally and productively with people while fostering innovative solutions for real-world challenges in healthcare, education, and human assistance."
+    "description": "Our robotics research is currently focused on advancing Human-Robot Interaction, with applications spanning education, manufacturing, entertainment, and service domains. The department's work in this field not only aims to create more effective and engaging robotic systems but also uses robots as tools to deepen our understanding of human behavior. A key focus of the research is on building socially engaging and useful robot partners. This includes developing robots that provide social and cognitive support for education and therapy, robots that work collaboratively with human partners on manufacturing tasks, and robots that help explore questions about human social behavior. Researchers employ a wide range of techniques, from computational modeling to clinical methods, to investigate crucial aspects of human-robot interaction such as trust, engagement, and embodiment. The department is also making significant strides in enabling robots to collaborate more effectively with humans in real-world environments. This involves developing algorithms and machine learning models that allow robots to understand and adapt to the intentions and needs of human partners, often in uncertain and dynamic settings. Researchers are exploring how robots can learn from demonstrations and interactions, improving their ability to perform tasks in collaborative and assistive roles. This has important applications in areas like healthcare, household assistance, and industry. Another area of research focuses on robot manipulation and control, particularly in dynamic, unstructured environments. This includes designing motion planning and control strategies that allow robots to perform tasks with greater efficiency and safety, especially when collaborating closely with humans. The work often involves applying optimization and machine learning techniques to improve robot autonomy, precision, and adaptability, with potential applications in fields such as healthcare for tasks like surgery or rehabilitation. Through these diverse research streams, we are advancing the capabilities of robotic systems while also providing critical insights into human behavior and social dynamics in the context of human-robot interaction. This interdisciplinary approach, combining elements of computer science, engineering, psychology, and social sciences, comes together under Yale Engineering'sRobotics for Humanity initiative, where researchers collaborate across departments and beyond engineering to include partnerships across Yale's campus. This comprehensive ecosystem positions Yale at the cutting edge of robotics research, creating robots that can interact naturally and productively with people while fostering innovative solutions for real-world challenges in healthcare, education, and human assistance.",
+    "professors": [
+      {
+        "name": "Tesca Fitzgerald",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/tesca-fitzgerald"
+      },
+      {
+        "name": "Daniel Rakita",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/daniel-rakita"
+      },
+      {
+        "name": "Brian Scassellati",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/brian-scassellati"
+      },
+      {
+        "name": "Marynel Vázquez",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/marynel-vazquez"
+      },
+      {
+        "name": "Alex Wong",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/alex-wong"
+      },
+      {
+        "name": "Lin Zhong",
+        "title": "Joseph C. Tsai Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/lin-zhong"
+      }
+    ]
   },
   {
     "area": "Scientific Computing & Applied Math",
-    "description": "Computers have dramatically changed the practice of many disciplines including engineering, medicine, and science. The advancement has enabled the simulation and testing of thousands of designs and trials without physical prototypes, revolutionizing research practices and product development. The reliability, flexibility, efficiency, and (often attractive) costs of scientific computation have placed scientific computation as the keystone between theory and applications. Basic research in scientific computing conducted at Yale is being applied to a wide range of applications. Currently, the emphasis is on problems originating in the biomedical sciences, ranging from high throughput genomic search engines to simulations of biological cells. Active collaborations are in place with several researchers in the Yale Biology Departments and the Yale Medical School, showcasing that high performance scientific computing is an essential component of the “genomic revolution.” Scientific computing research at Yale emphasizes algorithm development, theoretical analysis, systems modeling, and programming considerations. Researchers are developing new, fast, and parallel methods, evaluating their convergence rates, stability, and optimality. One area of focus is the adaptation of fast serial algorithms to parallel multiprocessor environments, utilizing clusters or LANs of workstations as virtual multiprocessors. The department's work in applied mathematics underpins these computational advances, providing essential techniques for modeling physical systems. Research spans both discrete mathematics (including discrete algorithms, combinatorics, and graph algorithms) and continuous mathematics (covering areas such as partial differential equations, numerical analysis, and geometric algorithms)."
+    "description": "Computers have dramatically changed the practice of many disciplines including engineering, medicine, and science. The advancement has enabled the simulation and testing of thousands of designs and trials without physical prototypes, revolutionizing research practices and product development. The reliability, flexibility, efficiency, and (often attractive) costs of scientific computation have placed scientific computation as the keystone between theory and applications. Basic research in scientific computing conducted at Yale is being applied to a wide range of applications. Currently, the emphasis is on problems originating in the biomedical sciences, ranging from high throughput genomic search engines to simulations of biological cells. Active collaborations are in place with several researchers in the Yale Biology Departments and the Yale Medical School, showcasing that high performance scientific computing is an essential component of the “genomic revolution.” Scientific computing research at Yale emphasizes algorithm development, theoretical analysis, systems modeling, and programming considerations. Researchers are developing new, fast, and parallel methods, evaluating their convergence rates, stability, and optimality. One area of focus is the adaptation of fast serial algorithms to parallel multiprocessor environments, utilizing clusters or LANs of workstations as virtual multiprocessors. The department's work in applied mathematics underpins these computational advances, providing essential techniques for modeling physical systems. Research spans both discrete mathematics (including discrete algorithms, combinatorics, and graph algorithms) and continuous mathematics (covering areas such as partial differential equations, numerical analysis, and geometric algorithms).",
+    "professors": [
+      {
+        "name": "Ronald Coifman",
+        "title": "Sterling Professor of Electrical & Computer Engineering",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ronald-coifman"
+      },
+      {
+        "name": "Theodore Kim",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/theodore-kim"
+      },
+      {
+        "name": "Smita Krishnaswamy",
+        "title": "Associate Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/smita-krishnaswamy"
+      },
+      {
+        "name": "Vladimir Rokhlin",
+        "title": "Arthur K. Watson Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/vladimir-rokhlin"
+      },
+      {
+        "name": "Daniel Spielman",
+        "title": "Sterling Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/daniel-spielman"
+      }
+    ]
   },
   {
     "area": "Security & Cryptography",
-    "description": "Securing the Internet presents great challenges and research opportunities. Potential applications such as Internet voting, universally available medical records, and ubiquitous e-commerce are all being hindered because of serious security and privacy concerns. The epidemic of hacker attacks on personal computers and web sites only highlights the inherent vulnerability of the current computer and network infrastructure. Adequately addressing security and privacy concerns requires a combination of technical, social, and legal approaches. Topics currently under active investigation in the department include mathematical modeling of security properties, implementation and application of cryptographic protocols, secure and privacy-preserving distributed algorithms, trust management, verification of security properties, and proof-carrying code. There is also interest in the legal aspects of security, privacy, and intellectual property, both within the department and in the world-famous Yale Law school, with which we cooperate."
+    "description": "Securing the Internet presents great challenges and research opportunities. Potential applications such as Internet voting, universally available medical records, and ubiquitous e-commerce are all being hindered because of serious security and privacy concerns. The epidemic of hacker attacks on personal computers and web sites only highlights the inherent vulnerability of the current computer and network infrastructure. Adequately addressing security and privacy concerns requires a combination of technical, social, and legal approaches. Topics currently under active investigation in the department include mathematical modeling of security properties, implementation and application of cryptographic protocols, secure and privacy-preserving distributed algorithms, trust management, verification of security properties, and proof-carrying code. There is also interest in the legal aspects of security, privacy, and intellectual property, both within the department and in the world-famous Yale Law school, with which we cooperate.",
+    "professors": [
+      {
+        "name": "Joan Feigenbaum",
+        "title": "Grace Murray Hopper Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/joan-feigenbaum"
+      },
+      {
+        "name": "Ben Fisch",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ben-fisch"
+      },
+      {
+        "name": "Michael Fischer",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/michael-fischer"
+      },
+      {
+        "name": "Anurag Khandelwal",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/anurag-khandelwal"
+      },
+      {
+        "name": "Charalampos Papamanthou",
+        "title": "Associate Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/charalampos-papamanthou"
+      },
+      {
+        "name": "Ruzica Piskac",
+        "title": "Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ruzica-piskac"
+      },
+      {
+        "name": "Zhong Shao",
+        "title": "Thomas L. Kempner Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/zhong-shao"
+      },
+      {
+        "name": "Katerina Sotiraki",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/katerina-sotiraki"
+      },
+      {
+        "name": "Fan Zhang",
+        "title": "Assistant Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/fan-zhang"
+      }
+    ]
   },
   {
     "area": "Societal & Humanistic Aspects of Computation",
-    "description": "Today’s society comprises humans living in a complex and interconnected world that is intertwined with a variety of computing, sensing, and communicating devices. Human-generated data is being recorded at unprecedented rates and scales. Knowledge from such data can no longer be derived through simple manual algorithms and require sophisticated AI algorithms. Such powerful algorithms, which are capable of learning from large-scale human-generated data, are increasingly controlling various aspects of modern society, including social interactions (social media and search platforms, newsfeeds), economics (sharing platforms, blockchains, banking), learning, and governance (judgements, policing, voting). While these algorithms have a tremendous potential to change our lives for the better, but, via the ability to mimic and nudge human behavior, they also have the potential to be discriminatory, reinforce societal prejudices, violate privacy, polarize opinions, and influence political processes. As a consequence, the trust in such systems–from a societal, and legal standpoint–is plummeting. Further, the lack of an understanding of how humans generate data and how these algorithms extract knowledge from it, or how they influence human behavior, has become a major bottleneck in designing mechanisms to regulate modern society. A key area of study is the development of context-aware decision-making methods. This work aims to mitigate explicit and implicit biases, control polarization, improve diversity, and ensure privacy in algorithmic systems. Researchers are exploring the foundations of these issues and designing new approaches that can enhance the trustworthiness and fairness of computational systems that impact society. The work in this field is inherently interdisciplinary, bridging computer science with political science, law, sociology, economics, psychology and beyond. By studying how humans generate data, how algorithms extract knowledge from it, and how these systems influence human behavior, Yale researchers are contributing to the critical task of designing mechanisms to regulate and improve the integration of advanced computational systems in modern society."
+    "description": "Today’s society comprises humans living in a complex and interconnected world that is intertwined with a variety of computing, sensing, and communicating devices. Human-generated data is being recorded at unprecedented rates and scales. Knowledge from such data can no longer be derived through simple manual algorithms and require sophisticated AI algorithms. Such powerful algorithms, which are capable of learning from large-scale human-generated data, are increasingly controlling various aspects of modern society, including social interactions (social media and search platforms, newsfeeds), economics (sharing platforms, blockchains, banking), learning, and governance (judgements, policing, voting). While these algorithms have a tremendous potential to change our lives for the better, but, via the ability to mimic and nudge human behavior, they also have the potential to be discriminatory, reinforce societal prejudices, violate privacy, polarize opinions, and influence political processes. As a consequence, the trust in such systems–from a societal, and legal standpoint–is plummeting. Further, the lack of an understanding of how humans generate data and how these algorithms extract knowledge from it, or how they influence human behavior, has become a major bottleneck in designing mechanisms to regulate modern society. A key area of study is the development of context-aware decision-making methods. This work aims to mitigate explicit and implicit biases, control polarization, improve diversity, and ensure privacy in algorithmic systems. Researchers are exploring the foundations of these issues and designing new approaches that can enhance the trustworthiness and fairness of computational systems that impact society. The work in this field is inherently interdisciplinary, bridging computer science with political science, law, sociology, economics, psychology and beyond. By studying how humans generate data, how algorithms extract knowledge from it, and how these systems influence human behavior, Yale researchers are contributing to the critical task of designing mechanisms to regulate and improve the integration of advanced computational systems in modern society.",
+    "professors": [
+      {
+        "name": "Nisheeth Vishnoi",
+        "title": "A. Bartlett Giamatti Professor of Computer Science",
+        "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/nisheeth-vishnoi"
+      }
+    ]
   }
 ]

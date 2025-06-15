@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import json
 
-# Step 1: Fetch the webpage HTML
+# Fetch the webpage HTML
 
 url = "https://engineering.yale.edu/academic-study/departments/computer-science/research-areas"
 response = requests.get(url)        # Send GET request to URL
@@ -11,20 +11,11 @@ html = response.text                # Extract the HTML text content
 
 # print(html[:1000])                  # Print the first 1000 characters just to inspect it
 
-# Step 2: Parse the HTML using BeautifulSoup
+# Parse the HTML using BeautifulSoup
 
-# Assume you already fetched 'html' using requests
 soup = BeautifulSoup(html, "html.parser")
 
-# Print out the first few tags just to explore
-# print(soup.prettify()[:1000])  # Optional: visualize the parsed HTML nicely formatted
-
-# Let's try finding the first research area block
-
-# block = soup.find("div", class_="side-nav-blocks")
-# print(block.h2.text)  # Should print "Artificial Intelligence & Machine Learning"
-
-# Step 3: Loop through all research area blocks
+# Loop through all research area blocks
 
 blocks = soup.find_all("div", class_="side-nav-blocks")
 print(f"Found {len(blocks)} research areas.")
@@ -42,9 +33,7 @@ for block in blocks:
     if re.match(r"^\d{4}\s*[-–]\s*\d{4}$", title):
         continue  # e.g., "2025–2020"
 
-    # print("Area:", title)
-
-    # Step 4: Extract description paragraphs
+    # Extract description paragraphs
 
     description_paragraphs = []
 
@@ -60,12 +49,35 @@ for block in blocks:
     description = " ".join(description_paragraphs)
     # print("Description:", description[:200] + "...\n")  # Print first 200 characters to preview
 
+    # Extract Associated Professors
+
+    professors = []
+
+    faculty_tag = block.find("div", class_="faculty-member-list")
+    a_tag = faculty_tag.find_all("a")
+
+    for tag in a_tag:
+        href = tag["href"]
+        if href.startswith("/"):
+            href = "https://engineering.yale.edu" + href
+
+        p = tag.find("p")
+        name = p.find("strong").get_text(strip=True)
+        name_title = p.get_text(strip=True).replace(name, "").strip()
+        
+        professors.append({
+            "name": name,
+            "title": name_title,
+            "profile_url": href
+        })
+
     data.append({
     "area": title,
-    "description": description
+    "description": description,
+    "professors": professors
     })
 
-# Step 5: Save results to JSON
+# Save results to JSON
 output_path = "data/research_areas.json"
 
 with open(output_path, "w", encoding="utf-8") as f:
