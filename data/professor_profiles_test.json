@@ -7,12 +7,12 @@
     "website": "https://www.cs.yale.edu/homes/aspnes/",
     "room_office": "AKW 401",
     "office_address": "51 Prospect Street New Haven, CT 06511",
-    "perspectives": null,
+    "perspectives": "Aspnes' research emphasizes the use of randomization to solve difficult core problems in the theory of distributed algorithms.\n\nHis recent work has concentrated on tools for managing large-scale loosely structured systems as found in peer-to-peer networks and wireless sensor networks. These tools include novel distributed data structures supporting efficient range queries over large data sets scattered across many machines, new models of distributed computation that capture the limited resources of individual nodes in sensor systems, and mechanisms for providing security and fault-tolerance in large-scale systems with no restrictions on the arrival of new and possibly malevolent participants. His interests also include related problems in biology, economics, and learning theory.\n\nAspnes is a member of the editorial board for Algorithmica, has served as program committee chair for the PODC 2005 and DCOSS 2007 conferences, and has served on numerous conference program committees.",
     "areas": [
       "Algorithms & Complexity Theory",
       "Distributed Computing"
     ],
-    "last_scraped_at": "2025-08-19T07:41:06.940429Z",
+    "last_scraped_at": "2025-08-19T09:05:49.694217Z",
     "raw_html_path": "data/raw/professors/james-aspnes.html"
   },
   {
@@ -23,12 +23,12 @@
     "website": "https://www.cs.yale.edu/homes/cai/",
     "room_office": "Room 338",
     "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
-    "perspectives": null,
+    "perspectives": "- Theory of Computation\n\n- Economics & Computation\n\n- Optimization\n\n- Learning",
     "areas": [
       "Algorithms & Complexity Theory",
       "Artificial Intelligence & Machine Learning"
     ],
-    "last_scraped_at": "2025-08-19T07:41:08.127394Z",
+    "last_scraped_at": "2025-08-19T09:05:51.890123Z",
     "raw_html_path": "data/raw/professors/yang-cai.html"
   },
   {
@@ -39,12 +39,12 @@
     "website": "http://cs-www.cs.yale.edu/homes/jf/home.html",
     "room_office": "AKW 109",
     "office_address": "51 Prospect Street New Haven, CT 06511",
-    "perspectives": null,
+    "perspectives": "Joan Feigenbaum is the Grace Murray Hopper Professor of Computer Science at Yale University. She received a B.A. in Mathematics from Harvard and a Ph.D. in Computer Science from Stanford. Between finishing her Ph.D. in 1986 and starting at Yale in 2000, she was with AT&T, most recently in the Information Sciences Research Center of the AT&T Shannon Laboratory in Florham Park, NJ. There she established a research group in the emerging area of algorithmics for massive data sets and served as manager of the group for two years.\n\nProfessor Feigenbaum's research interests include Internet algorithms, computational complexity, security and privacy, and digital copyright. She has a long-standing interest in fundamental problems in complexity theory that are motivated by cryptology and is co-inventor (with former colleagues Matt Blaze and Jack Lacy) of the security-research area of \"trust management.\" More recently, she has worked on basic algorithms for massive data sets, particularly those generated in network operations and business-to-consumer e-commerce. With collaborators Sampath Kannan, Martin Strauss, and Mahesh Viswanathan, Professor Feigenbaum has devised several highly influential algorithms for network-generated massive data, including a randomized algorithm for deciding whether two streams of router measurements are approximately equivalent and another for deciding whether a stream is close to having the \"groupedness\" property (a natural relaxation of the sortedness property). Within the area of e-commerce foundations, she has also worked on the interplay of incentives and computation. Using tools from microeconomics and game theory, computer scientists are now developing a theory of \"incentive-compatible\" distributed computation. In joint work with Arvind Krishnamurthy, Christos Papadimitriou, Rahul Sami, and Scott Shenker, Professor Feigenbaum has studied incentive-compatible protocols for multicast cost/sharing and interdomain routing.\n\nProfessor Feigenbaum has an extensive record of distinguished service to the Computer Science community. From 1997 to 2002, she served as Editor-in-Chief of the Journal of Cryptology. She has also been an editorial-board member for the SIAM Journal on Computing, Program Chair for the Crypto 1991 and Complexity 1998 conferences, and Program Committee member for numerous conferences and workshops. Well known for her ability to establish and explicate research priorities, Professor Feigenbaum has given many high-profile, direction-setting, invited talks, including \"Security and Privacy in the Information Economy\" at the 1997 Grace Hopper Celebration of Women in Computing, \"Games, Complexity, and Approximation Algorithms\" at the 1998 International Congress of Mathematicians, and \"Massive Graphs: Algorithms, Applications, and Open Problems\" at the 1999 annual meetings of the American Mathematical Society and the Society for Industrial and Applied Mathematics.",
     "areas": [
       "Algorithms & Complexity Theory",
       "Security & Cryptography"
     ],
-    "last_scraped_at": "2025-08-19T07:41:09.298679Z",
+    "last_scraped_at": "2025-08-19T09:05:53.078149Z",
     "raw_html_path": "data/raw/professors/joan-feigenbaum.html"
   }
 ]

@@ -120,12 +120,42 @@ def extract_labeled_fields(soup: BeautifulSoup) -> dict:
 
     return results
 
-def extract_perspectives(soup: BeautifulSoup) -> str | None:
+def _clean_text(node) -> str:
+    """Turn <br> into newlines and collapse whitespace."""
+    txt = node.get_text(separator="\n", strip=True)
+    txt = re.sub(r"[ \t]+", " ", txt)
+    txt = re.sub(r"\n{3,}", "\n\n", txt)   # at most 2 consecutive newlines
+    return txt.strip()
+
+def _collect_paras_and_lists(container) -> list[str]:
+    """Collect paragraphs and list items as separate blocks (bullets for <li>)."""
+    blocks = []
+    # paragraphs
+    for p in container.find_all("p"):
+        t = _clean_text(p)
+        if t:
+            blocks.append(t)
+    # lists
+    for ul in container.find_all(["ul", "ol"]):
+        for li in ul.find_all("li"):
+            t = _clean_text(li)
+            if t:
+                blocks.append(f"- {t}")
+    # fallback: if nothing matched, take raw text of container
+    if not blocks:
+        t = _clean_text(container)
+        if t:
+            blocks.append(t)
+    return blocks
+
+def extract_perspectives_strict(soup: BeautifulSoup) -> str | None:
     """
-    Find the section headed by <h3>Perspectives</h3>, then read the content
-    in the adjacent column (usually paragraphs).
+    Find <h3>Perspectives</h3>, then:
+      - go up to the nearest ancestor with 'grid' in class
+      - from that grid row, take the sibling col with 'col-span-2' (the content column)
+      - collect <p> and <li> as blocks
     """
-    # find <h3> whose text is exactly 'Perspectives' ignoring case/spaces
+    # 1) find the <h3>
     h3 = None
     for tag in soup.find_all("h3"):
         if tag.get_text(strip=True).lower() == "perspectives":
@@ -134,39 +164,58 @@ def extract_perspectives(soup: BeautifulSoup) -> str | None:
     if not h3:
         return None
 
-    # The page uses a 3-column grid; the content is in the second/third column.
-    # Walk up to a reasonable container (the grid row), then find the large column.
-    row = h3.find_parent(class_=re.compile(r"grid|col-span"))
-    if not row:
-        # Fallback: just collect paragraphs after the h3 until the next h3
-        texts = []
-        for sib in h3.find_all_next():
-            if sib.name == "h3":
-                break
-            if sib.name == "p":
-                texts.append(sib.get_text(" ", strip=True))
-        return "\n\n".join(texts) if texts else None
+    # 2) climb to the grid row
+    grid_row = h3.find_parent(lambda t: t.name == "div" and t.get("class") and any("grid" in c for c in t.get("class")))
+    if not grid_row:
+        return None  # structure unexpected
 
-    # Preferred: within this row, find the wider column
+    # 3) find the right/large column (content)
     content_div = None
-    for div in row.find_all("div", recursive=False):
-        # Heuristic: pick the div that is not the label column and has paragraphs
-        ps = div.find_all("p")
-        if ps and (div.get("class") and any("col-span-2" in c for c in div.get("class")) or len(ps) >= 1):
+    for div in grid_row.find_all("div", recursive=False):
+        classes = " ".join(div.get("class", []))
+        if "col-span-2" in classes or "lg:col-span-2" in classes:
             content_div = div
             break
+    # fallback: any child div that actually has p/ul/ol
+    if content_div is None:
+        for div in grid_row.find_all("div", recursive=False):
+            if div.find(["p", "ul", "ol"]):
+                content_div = div
+                break
+    if not content_div:
+        return None
 
-    # Collect paragraphs from the content div
-    texts = []
-    if content_div:
-        for p in content_div.find_all("p"):
-            texts.append(p.get_text(" ", strip=True))
-    else:
-        # Fallback if structure differs
-        for p in row.find_all("p"):
-            texts.append(p.get_text(" ", strip=True))
+    # 4) collect paragraphs and lists
+    blocks = _collect_paras_and_lists(content_div)
+    combined = "\n\n".join(blocks).strip()
+    return combined or None
 
-    return "\n\n".join(texts).strip() if texts else None
+def extract_heading_until_next_h3(soup: BeautifulSoup, heading_text: str) -> str | None:
+    """Find an <h3> with given text (case-insensitive); collect content until next <h3>."""
+    target = None
+    for h3 in soup.find_all("h3"):
+        if h3.get_text(strip=True).lower() == heading_text.lower():
+            target = h3
+            break
+    if not target:
+        return None
+
+    blocks = []
+    for sib in target.find_all_next():
+        if sib.name == "h3":  # stop at next section
+            break
+        if sib.name in ("p", "ul", "ol"):
+            if sib.name == "p":
+                t = _clean_text(sib)
+                if t:
+                    blocks.append(t)
+            else:
+                for li in sib.find_all("li"):
+                    t = _clean_text(li)
+                    if t:
+                        blocks.append(f"- {t}")
+    combined = "\n\n".join(blocks).strip()
+    return combined or None
 
 def parse_professor_profile(url: str, html: str) -> dict:
     """
@@ -179,7 +228,18 @@ def parse_professor_profile(url: str, html: str) -> dict:
     email = extract_email(soup)
     website = extract_website(soup)
     labeled = extract_labeled_fields(soup)
-    perspectives = extract_perspectives(soup)
+    # perspectives = extract_perspectives(soup)
+
+    # NEW: get Perspectives robustly
+    perspectives = (
+        extract_perspectives_strict(soup)
+        or extract_heading_until_next_h3(soup, "Perspectives")
+        # Optional fallbacks if some pages use other labels:
+        or extract_heading_until_next_h3(soup, "Research Interests")
+        or extract_heading_until_next_h3(soup, "About")          # sometimes “About <Name>”
+        or extract_heading_until_next_h3(soup, "Biography")
+        or None
+    )
 
     # Normalize the fields we care about, pulling from labeled where needed
     room_office = labeled.get("Room / Office") or labeled.get("Room/Office")
