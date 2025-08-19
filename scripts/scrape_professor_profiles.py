@@ -9,19 +9,6 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from collections import defaultdict
 
-# # Path to your JSON file
-# file_path = "data/research_areas.json"
-
-# # Open and load it
-# with open(file_path, "r", encoding="utf-8") as f:
-#     data = json.load(f)
-
-# # Now `data` is a Python object (usually a list or dict)
-# print(f"Loaded {len(data)} research_areas from {file_path}")
-
-# sample_urls = list(prof_to_areas.keys())[:2]
-# print(sample_urls)
-
 HEADERS = {
     # A User-Agent helps sites not reject “unknown” bots
     "User-Agent": "Mozilla/5.0 (compatible; AcademicMatcherBot/0.1; +https://github.com/Alienware2000/Academic-Matcher)"
@@ -320,6 +307,9 @@ if __name__ == "__main__":
                 prof_to_areas[url].add(area_name)
 
     print(f"Unique professor profile URLs: {len(prof_to_areas)}")
+
+    # sample_urls = list(prof_to_areas.keys())[:2]
+    # print(sample_urls)
 
     small_map = dict(list(prof_to_areas.items())[:3])   # only 3 for testing
     scrape_all_profiles(small_map, output_path="data/professor_profiles_test.json", delay=1.0)
