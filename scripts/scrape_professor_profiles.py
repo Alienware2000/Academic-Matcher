@@ -237,6 +237,7 @@ def parse_professor_profile(url: str, html: str) -> dict:
         # Optional fallbacks if some pages use other labels:
         or extract_heading_until_next_h3(soup, "Research Interests")
         or extract_heading_until_next_h3(soup, "About")          # sometimes “About <Name>”
+        or extract_heading_until_next_h3(soup, f"About {extract_name(soup) or ''}".strip())
         or extract_heading_until_next_h3(soup, "Biography")
         or None
     )
@@ -395,6 +396,13 @@ if __name__ == "__main__":
     delay=1.5  # be polite to the server
 )
     
+    # print()
+    # rows = json.load(open("data/professor_profiles.json", encoding="utf-8"))
+    # missing = [(r["name"], r["url"]) for r in rows if not (r.get("perspectives") and r["perspectives"].strip())]
+    # print(len(missing), "missing")
+    # for name, url in missing:
+    #     print("-", name, "->", url)
+
     validate_json("data/professor_profiles.json")
 
 
