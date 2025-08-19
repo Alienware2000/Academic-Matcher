@@ -4,6 +4,7 @@ import json
 import time
 import requests
 from tqdm import tqdm
+from datetime import datetime
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from collections import defaultdict
@@ -17,16 +18,6 @@ from collections import defaultdict
 
 # # Now `data` is a Python object (usually a list or dict)
 # print(f"Loaded {len(data)} research_areas from {file_path}")
-
-# # Build a mapping: profile_url -> set(areas)
-# prof_to_areas = defaultdict(set)
-
-# for area in data:  # data = research_areas loaded from JSON
-#     area_name = area.get("area")
-#     for prof in area.get("professors", []):
-#         url = prof.get("profile_url")
-#         if url:
-#             prof_to_areas[url].add(area_name)
 
 # print(f"Unique professor profile URLs: {len(prof_to_areas)}")
 
@@ -221,39 +212,131 @@ def parse_professor_profile(url: str, html: str) -> dict:
         "perspectives": perspectives,
     }
 
+def scrape_all_profiles(prof_to_areas,
+                        output_path="data/professor_profiles.json",
+                        raw_dir="data/raw/professors",
+                        delay=1.0):
+    """
+    Scrape every professor profile URL in prof_to_areas (dict url -> set(areas)).
+    - Saves raw HTML snapshots to raw_dir.
+    - Writes incremental progress to output_path after each successful profile.
+    - Resumes if output_path already exists.
+    """
+
+    # Make sure the raw HTML dir exists
+    os.makedirs(raw_dir, exist_ok=True)
+
+    # --- Resume support: load already-scraped profiles if file exists ---
+    scraped_map = {}   # url -> record
+    results = []       # list of records we'll write out
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as f:
+                existing_list = json.load(f)
+            # create quick lookup to avoid re-scraping
+            for r in existing_list:
+                if r.get("url"):
+                    scraped_map[r["url"]] = r
+            results = existing_list[:]  # start from existing
+            print(f"[resume] Loaded {len(existing_list)} existing profiles from {output_path}")
+        except Exception as e:
+            print(f"[warn] Could not load existing {output_path}: {e}. Starting fresh.")
+            results = []
+            scraped_map = {}
+
+    total = len(prof_to_areas)
+    scraped_count = len(scraped_map)
+    failed = []
+
+    # Iterate with a progress bar
+    for url, areas in tqdm(prof_to_areas.items(), total=total, desc="scrape profiles"):
+        # Skip if already scraped
+        if url in scraped_map:
+            tqdm.write(f"[skip] already scraped: {url}")
+            continue
+
+        try:
+            # 1) Fetch
+            html = fetch_html(url)
+
+            # 2) Save raw HTML snapshot (for debugging / reproducibility)
+            slug = url_to_slug(url)
+            raw_path = save_raw_html(html, slug)  # returns the path where saved
+            tqdm.write(f"[saved raw] {raw_path}")
+
+            # 3) Parse the page into structured fields
+            record = parse_professor_profile(url, html)
+
+            # 4) Attach additional metadata
+            record["areas"] = sorted(list(areas))
+            record["last_scraped_at"] = datetime.utcnow().isoformat() + "Z"
+            record["raw_html_path"] = raw_path
+
+            # 5) Append to results and persist immediately
+            results.append(record)
+            scraped_map[url] = record
+            with open(output_path, "w", encoding="utf-8") as fout:
+                json.dump(results, fout, indent=2, ensure_ascii=False)
+            tqdm.write(f"[ok] scraped and saved: {url}")
+
+        except Exception as exc:
+            # Catch exceptions so one bad page doesn't stop the whole run
+            err = str(exc)
+            tqdm.write(f"[fail] {url} -> {err}")
+            failed.append({"url": url, "error": err})
+            # also persist failures so you can inspect later
+            with open("data/failed_professors.json", "w", encoding="utf-8") as ferr:
+                json.dump(failed, ferr, indent=2, ensure_ascii=False)
+
+        # Politeness: pause between requests
+        time.sleep(delay)
+
+    # Final summary
+    print("\n--- scrape finished ---")
+    print(f"Total candidate URLs: {total}")
+    print(f"Successfully scraped: {len(scraped_map)}")
+    print(f"Failed: {len(failed)}")
+    print(f"Output written to: {output_path}")
+    if failed:
+        print("Failed examples saved to data/failed_professors.json")
+
 if __name__ == "__main__":
     # Load your research_areas.json (you already have this):
     with open("data/research_areas.json", "r", encoding="utf-8") as f:
         areas = json.load(f)
 
-    # Build the unique URL list
-    urls = []
-    for area in areas:
+    # Build a mapping: profile_url -> set(areas)
+    prof_to_areas = defaultdict(set)
+
+    for area in areas:  # data = research_areas loaded from JSON
+        area_name = area.get("area")
         for prof in area.get("professors", []):
-            u = prof.get("profile_url")
-            if u:
-                urls.append(u)
-    unique_urls = sorted(set(urls))
-    print(f"Unique professor profile URLs: {len(unique_urls)}")
-    print(unique_urls[:3])
+            url = prof.get("profile_url")
+            if url:
+                prof_to_areas[url].add(area_name)
 
-    # --- Pick ONE URL to start ---
-    test_url = unique_urls[0]
-    print(f"\nFetching one profile: {test_url}")
+    print(f"Unique professor profile URLs: {len(prof_to_areas)}")
 
-    # Fetch + save raw HTML
-    html = fetch_html(test_url)
-    slug = url_to_slug(test_url)
-    raw_path = save_raw_html(html, slug)
-    print(f"Saved raw HTML to {raw_path}")
+    small_map = dict(list(prof_to_areas.items())[:3])   # only 3 for testing
+    scrape_all_profiles(small_map, output_path="data/professor_profiles_test.json", delay=1.0)
 
-    # Parse fields
-    profile = parse_professor_profile(test_url, html)
+    # # --- Pick ONE URL to start ---
+    # test_url = unique_urls[0]
+    # print(f"\nFetching one profile: {test_url}")
 
-    # Pretty print results for inspection
-    print("\nParsed profile:")
-    for k, v in profile.items():
-        if isinstance(v, str) and len(v) > 300:
-            print(f"- {k}: {v[:300]}... [truncated]")
-        else:
-            print(f"- {k}: {v}")
+    # # Fetch + save raw HTML
+    # html = fetch_html(test_url)
+    # slug = url_to_slug(test_url)
+    # raw_path = save_raw_html(html, slug)
+    # print(f"Saved raw HTML to {raw_path}")
+
+    # # Parse fields
+    # profile = parse_professor_profile(test_url, html)
+
+    # # Pretty print results for inspection
+    # print("\nParsed profile:")
+    # for k, v in profile.items():
+    #     if isinstance(v, str) and len(v) > 300:
+    #         print(f"- {k}: {v[:300]}... [truncated]")
+    #     else:
+    #         print(f"- {k}: {v}")

@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/james-aspnes",
+    "name": "James Aspnes",
+    "title": "Harold W. Cheel Professor of Computer Science",
+    "email": "james.aspnes@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/aspnes/",
+    "room_office": "AKW 401",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": null,
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Distributed Computing"
+    ],
+    "last_scraped_at": "2025-08-19T07:41:06.940429Z",
+    "raw_html_path": "data/raw/professors/james-aspnes.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/yang-cai",
+    "name": "Yang Cai",
+    "title": "Professor of Computer Science",
+    "email": "yang.cai@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/cai/",
+    "room_office": "Room 338",
+    "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": null,
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Artificial Intelligence & Machine Learning"
+    ],
+    "last_scraped_at": "2025-08-19T07:41:08.127394Z",
+    "raw_html_path": "data/raw/professors/yang-cai.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/joan-feigenbaum",
+    "name": "Joan Feigenbaum",
+    "title": "Grace Murray Hopper Professor of Computer Science",
+    "email": "joan.feigenbaum@yale.edu",
+    "website": "http://cs-www.cs.yale.edu/homes/jf/home.html",
+    "room_office": "AKW 109",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": null,
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T07:41:09.298679Z",
+    "raw_html_path": "data/raw/professors/joan-feigenbaum.html"
+  }
+]
