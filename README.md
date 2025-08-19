@@ -68,4 +68,21 @@ We have completed **Week 2 (Data Collection & Scraping)**:
    git clone https://github.com/Alienware2000/Academic-Matcher.git
    cd Academic-Matcher
 
+2. Set up environment:
+
+    ```bash
+    conda create -n matcher python=3.11
+    conda activate matcher
+    pip install -r requirements.txt
+
+3. Run scrapers:
+
+   ```bash
+    python scripts/scrape_research_areas.py
+    python scripts/scrape_professor_profiles.py
+    
+4. Data will appear in `data/`:
+    ```bash
+    Profiles → `professor_profiles.json`
+    Raw HTML → `data/raw/professors/`
 
