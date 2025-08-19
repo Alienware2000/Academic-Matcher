@@ -1,6 +1,8 @@
 import os       
 import json     
-from typing import List, Dict, Tuple  
+from typing import List, Dict, Tuple
+import numpy as np
+from sentence_transformers import SentenceTransformer
 
 
 # --------- Config (file paths) ----------
@@ -90,17 +92,27 @@ def build_corpus(profiles: List[Dict]) -> Tuple[List[str], List[Dict]]:
 
 # --------- Lesson A main ---------
 if __name__ == "__main__":
-    # 1) Load profiles
+    # Load profiles
     profiles = load_profiles(PROFILES_PATH)
     print(f"[load] profiles: {len(profiles)} from {PROFILES_PATH}")
 
-    # 2) Build corpus text + metadata
+    # Build corpus text + metadata
     documents, metas = build_corpus(profiles)
     print(f"[build] documents: {len(documents)} (non-empty)")
 
-    # 3) Peek at some examples to understand what we created
-    for i in range(3):
-        print(f"\n--- DOC {i} ---")
-        print(documents[i][:400])   # first 400 chars
-        print("--- META ---")
-        print({k: metas[i][k] for k in ["name", "areas", "url"]})
+    # --- NEW: load the sentence-transformers model
+    model_name = "sentence-transformers/all-MiniLM-L6-v2"
+    print(f"[model] loading {model_name} ...")
+    model = SentenceTransformer(model_name)
+
+    # --- Encode ONLY 3 docs to observe what happens
+    sample_docs = documents[:3]
+    emb = model.encode(
+        sample_docs,
+        batch_size=8,             # small batch, fine for 3 docs
+        convert_to_numpy=True,    # returns a numpy array
+        normalize_embeddings=False # we’ll normalize ourselves later
+    ).astype(np.float32)
+
+    print("[encode] sample shape:", emb.shape)  # expect (3, D), e.g. (3, 384)
+    print("row norms (before normalize):", np.linalg.norm(emb, axis=1))
