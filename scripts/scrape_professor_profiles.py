@@ -345,6 +345,21 @@ def scrape_all_profiles(prof_to_areas,
     if failed:
         print("Failed examples saved to data/failed_professors.json")
 
+def validate_json(path: str):
+    print()
+    if not os.path.exists(path):
+        print(f"[validate] not found: {path}")
+        return
+    rows = json.load(open(path, encoding="utf-8"))
+    n = len(rows)
+    n_persp = sum(1 for r in rows if (r.get("perspectives") and r["perspectives"].strip()))
+    n_name  = sum(1 for r in rows if (r.get("name") and r["name"].strip()))
+    print(f"[validate] {path}")
+    print(f"  records: {n}")
+    print(f"  with perspectives: {n_persp}")
+    print(f"  with name: {n_name}")
+    print(f"  sample 2: {[(r.get('name'), bool(r.get('perspectives'))) for r in rows[:2]]}")
+
 if __name__ == "__main__":
     # Path to your JSON file
     file_path = "data/research_areas.json"
@@ -371,26 +386,16 @@ if __name__ == "__main__":
     # sample_urls = list(prof_to_areas.keys())[:2]
     # print(sample_urls)
 
-    small_map = dict(list(prof_to_areas.items())[:3])   # only 3 for testing
-    scrape_all_profiles(small_map, output_path="data/professor_profiles_test.json", delay=1.0)
+    # small_map = dict(list(prof_to_areas.items())[:3])   # only 3 for testing
+    # scrape_all_profiles(small_map, output_path="data/professor_profiles_test.json", delay=1.0)
 
-    # # --- Pick ONE URL to start ---
-    # test_url = unique_urls[0]
-    # print(f"\nFetching one profile: {test_url}")
+    scrape_all_profiles(
+    prof_to_areas,
+    output_path="data/professor_profiles.json",
+    delay=1.5  # be polite to the server
+)
+    
+    validate_json("data/professor_profiles.json")
 
-    # # Fetch + save raw HTML
-    # html = fetch_html(test_url)
-    # slug = url_to_slug(test_url)
-    # raw_path = save_raw_html(html, slug)
-    # print(f"Saved raw HTML to {raw_path}")
 
-    # # Parse fields
-    # profile = parse_professor_profile(test_url, html)
-
-    # # Pretty print results for inspection
-    # print("\nParsed profile:")
-    # for k, v in profile.items():
-    #     if isinstance(v, str) and len(v) > 300:
-    #         print(f"- {k}: {v[:300]}... [truncated]")
-    #     else:
-    #         print(f"- {k}: {v}")
+    

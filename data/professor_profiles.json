@@ -1,0 +1,645 @@
+[
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/james-aspnes",
+    "name": "James Aspnes",
+    "title": "Harold W. Cheel Professor of Computer Science",
+    "email": "james.aspnes@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/aspnes/",
+    "room_office": "AKW 401",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Aspnes' research emphasizes the use of randomization to solve difficult core problems in the theory of distributed algorithms.\n\nHis recent work has concentrated on tools for managing large-scale loosely structured systems as found in peer-to-peer networks and wireless sensor networks. These tools include novel distributed data structures supporting efficient range queries over large data sets scattered across many machines, new models of distributed computation that capture the limited resources of individual nodes in sensor systems, and mechanisms for providing security and fault-tolerance in large-scale systems with no restrictions on the arrival of new and possibly malevolent participants. His interests also include related problems in biology, economics, and learning theory.\n\nAspnes is a member of the editorial board for Algorithmica, has served as program committee chair for the PODC 2005 and DCOSS 2007 conferences, and has served on numerous conference program committees.",
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Distributed Computing"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:10.192596Z",
+    "raw_html_path": "data/raw/professors/james-aspnes.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/yang-cai",
+    "name": "Yang Cai",
+    "title": "Professor of Computer Science",
+    "email": "yang.cai@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/cai/",
+    "room_office": "Room 338",
+    "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "- Theory of Computation\n\n- Economics & Computation\n\n- Optimization\n\n- Learning",
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Artificial Intelligence & Machine Learning"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:12.259897Z",
+    "raw_html_path": "data/raw/professors/yang-cai.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/joan-feigenbaum",
+    "name": "Joan Feigenbaum",
+    "title": "Grace Murray Hopper Professor of Computer Science",
+    "email": "joan.feigenbaum@yale.edu",
+    "website": "http://cs-www.cs.yale.edu/homes/jf/home.html",
+    "room_office": "AKW 109",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Joan Feigenbaum is the Grace Murray Hopper Professor of Computer Science at Yale University. She received a B.A. in Mathematics from Harvard and a Ph.D. in Computer Science from Stanford. Between finishing her Ph.D. in 1986 and starting at Yale in 2000, she was with AT&T, most recently in the Information Sciences Research Center of the AT&T Shannon Laboratory in Florham Park, NJ. There she established a research group in the emerging area of algorithmics for massive data sets and served as manager of the group for two years.\n\nProfessor Feigenbaum's research interests include Internet algorithms, computational complexity, security and privacy, and digital copyright. She has a long-standing interest in fundamental problems in complexity theory that are motivated by cryptology and is co-inventor (with former colleagues Matt Blaze and Jack Lacy) of the security-research area of \"trust management.\" More recently, she has worked on basic algorithms for massive data sets, particularly those generated in network operations and business-to-consumer e-commerce. With collaborators Sampath Kannan, Martin Strauss, and Mahesh Viswanathan, Professor Feigenbaum has devised several highly influential algorithms for network-generated massive data, including a randomized algorithm for deciding whether two streams of router measurements are approximately equivalent and another for deciding whether a stream is close to having the \"groupedness\" property (a natural relaxation of the sortedness property). Within the area of e-commerce foundations, she has also worked on the interplay of incentives and computation. Using tools from microeconomics and game theory, computer scientists are now developing a theory of \"incentive-compatible\" distributed computation. In joint work with Arvind Krishnamurthy, Christos Papadimitriou, Rahul Sami, and Scott Shenker, Professor Feigenbaum has studied incentive-compatible protocols for multicast cost/sharing and interdomain routing.\n\nProfessor Feigenbaum has an extensive record of distinguished service to the Computer Science community. From 1997 to 2002, she served as Editor-in-Chief of the Journal of Cryptology. She has also been an editorial-board member for the SIAM Journal on Computing, Program Chair for the Crypto 1991 and Complexity 1998 conferences, and Program Committee member for numerous conferences and workshops. Well known for her ability to establish and explicate research priorities, Professor Feigenbaum has given many high-profile, direction-setting, invited talks, including \"Security and Privacy in the Information Economy\" at the 1997 Grace Hopper Celebration of Women in Computing, \"Games, Complexity, and Approximation Algorithms\" at the 1998 International Congress of Mathematicians, and \"Massive Graphs: Algorithms, Applications, and Open Problems\" at the 1999 annual meetings of the American Mathematical Society and the Society for Industrial and Applied Mathematics.",
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:14.228602Z",
+    "raw_html_path": "data/raw/professors/joan-feigenbaum.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/michael-fischer",
+    "name": "Michael Fischer",
+    "title": "Professor of Computer Science",
+    "email": "michael.fischer@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/fischer/",
+    "room_office": "AKW 408",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Michael Fischer's research interests include cryptographic protocols and security, theory of parallel and distributed systems, and discrete algorithms. Fischer is widely known for his work on the distributed consensus problem and for his \"parallel prefix\" algorithm that forms the basis of the \"scan\" operation fundamental to many parallel algorithms.\n\nFischer directed one of the first Ph.D. dissertations on secure and verifiable e-voting (in the mid-1980's) and has developed information-theoretically secure cryptosystems based on random card deals. Fischer is currently studying trust from an algorithmic point of view with a goal of allowing e-commerce systems to automatically learn and utilize necessary trust relationships.\n\nFischer is chair of the International Scientific Advisory Board for the Max-Planck-Institute for Computer Science in Saarbrücken, Germany, and is Guest Professor of Wuhan University and member of Academic Committee of the State Key Laboratory on Software Engineering, Wuhan, China. He is a member of the editorial board of Acta Informatica. He is an ACM fellow and previously served as Editor-in-Chief of the Journal of the ACM. He has served on the Advisory Committee to the National Science Foundation and on the board of directors of the Computing Research Association, where he was a founding member of the CRA subcommittee on the Status of Women in Computer Science.\n\nHe is active in the Yale Figure Skating Club, having served many terms on the executive committee as president and director. Fischer has taught at Carnegie Mellon University, the Massachusetts Institute of Technology, and the University of Washington.",
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Distributed Computing",
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:15.914940Z",
+    "raw_html_path": "data/raw/professors/michael-fischer.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/anna-c-gilbert",
+    "name": "Anna C. Gilbert",
+    "title": "John C. Malone Professor of Electrical & Computer Engineering",
+    "email": "anna.gilbert@yale.edu",
+    "website": "https://annacgilbert.github.io/",
+    "room_office": null,
+    "office_address": "10 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "- My research interests include analysis, probability, discrete mathematics, and algorithms.\n\n- I am especially interested in randomized algorithms with applications to harmonic analysis, signal and image processing, and massive datasets.",
+    "areas": [
+      "Algorithms & Complexity Theory"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:17.583194Z",
+    "raw_html_path": "data/raw/professors/anna-c-gilbert.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/daniel-spielman",
+    "name": "Daniel Spielman",
+    "title": "Sterling Professor of Computer Science",
+    "email": "daniel.spielman@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/spielman/",
+    "room_office": "Kline Tower 1303",
+    "office_address": "266 Whitney Avenue New Haven, CT 06511",
+    "perspectives": "- Design and analysis of algorithms, network science, machine learning, digital communications and scientific computing.",
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Artificial Intelligence & Machine Learning",
+      "Scientific Computing & Applied Math"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:19.454700Z",
+    "raw_html_path": "data/raw/professors/daniel-spielman.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/nisheeth-vishnoi",
+    "name": "Nisheeth Vishnoi",
+    "title": "A. Bartlett Giamatti Professor of Computer Science",
+    "email": "nisheeth.vishnoi@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/vishnoi/Home.html",
+    "room_office": "Room 319",
+    "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "My research spans several areas of theoretical computer science: from approximability of NP-hard problems, to combinatorial, convex and non-convex optimization, to tackling algorithmic questions involving dynamical systems, stochastic processes, and polynomials.\n\nI am also broadly interested in understanding and addressing some of the key questions that arise in nature and society from the viewpoint of theoretical computer science. Here, my current focus is on natural algorithms, emergence of intelligence, and questions at the interface of AI, Ethics, and Society.",
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Artificial Intelligence & Machine Learning",
+      "Quantum Computing",
+      "Societal & Humanistic Aspects of Computation"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:23.207943Z",
+    "raw_html_path": "data/raw/professors/nisheeth-vishnoi.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/andre-wibisono",
+    "name": "Andre Wibisono",
+    "title": "Assistant Professor of Computer Science",
+    "email": "andre.wibisono@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/wibisono/",
+    "room_office": "Room 339",
+    "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "- Development and analysis of algorithms for machine learning, in particular for problems in optimization, sampling, and game dynamics, using tools from dynamical systems, statistics, and information theory.",
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Artificial Intelligence & Machine Learning"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:26.628371Z",
+    "raw_html_path": "data/raw/professors/andre-wibisono.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/manolis-zampetakis",
+    "name": "Manolis Zampetakis",
+    "title": "Assistant Professor of Computer Science",
+    "email": "manolis.zampetakis@yale.edu",
+    "website": "https://mzampet.com/",
+    "room_office": "Room 331",
+    "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "- Theoretical Machine Learning, Statistics, Optimization, Computational Complexity, Game Theory, Mechanism Design, and Sublinear Algorithms.",
+    "areas": [
+      "Algorithms & Complexity Theory",
+      "Artificial Intelligence & Machine Learning"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:28.358363Z",
+    "raw_html_path": "data/raw/professors/manolis-zampetakis.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/arman-cohan",
+    "name": "Arman Cohan",
+    "title": "Assistant Professor of Computer Science",
+    "email": "arman.cohan@yale.edu",
+    "website": "https://nlp.cs.yale.edu/",
+    "room_office": "Room 326",
+    "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "My research spans various problems at the intersection of Machine Learning and NLP, including language modeling, representation learning, retrieval, and applications in specialized domains.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Natural Language Processing"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:31.839830Z",
+    "raw_html_path": "data/raw/professors/arman-cohan.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ronald-coifman",
+    "name": "Ronald Coifman",
+    "title": "Sterling Professor of Electrical & Computer Engineering",
+    "email": "coifman-ronald@yale.edu",
+    "website": null,
+    "room_office": "AKW 108A",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Ronald Coifman's research interests include: nonlinear Fourier analysis, wavelet theory, singular integrals, numerical analysis and scattering theory, real and complex analysis; new mathematical tools for efficient computation and transcriptions of physical data, with applications to numerical analysis, feature extraction recognition and denoising. He is currently developing analysis tools for spectrometric diagnostics and hyperspectral imaging.\n\nCoifman is a member of the American Academy of Arts and Sciences, the Connecticut Academy of Science and Engineering, and the National Academy of Sciences. He is a recipient of the 1996 DARPA Sustained Excellence Award, the 1996 Connecticut Science Medal, the 1999 Pioneer Award of the International Society for Industrial and Applied Science, and the 1999 National Medal of Science.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Scientific Computing & Applied Math"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:35.293168Z",
+    "raw_html_path": "data/raw/professors/ronald-coifman.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/tesca-fitzgerald",
+    "name": "Tesca Fitzgerald",
+    "title": "Assistant Professor of Computer Science",
+    "email": "tesca.fitzgerald@yale.edu",
+    "website": "https://www.tescafitzgerald.com/",
+    "room_office": "AKW 502",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Broadly, my interests include interactive robot learning, cognitive robotics, human-robot interaction, transfer learning, and active learning.\n\nAs our expectations for robots' adaptive capacities grow, it will be increasingly important for them to reason about the novel objects, tasks, and interactions inherent to everyday life. Rather than attempt to pre-train a robot for all potential task variations it may encounter, we can develop more capable and robust robots by assuming they will inevitably encounter situations that they are initially unprepared to address. My work enables a robot to address these novel situations by learning from a human teacher's domain knowledge of the task, such as the contextual use of an object or tool. Meeting this challenge requires robots to be flexible not only to novelty, but to different forms of novelty and their varying effects on the robot's task completion. My research focuses on:\n\n- the implications of novelty, and its various causes, on the robot's learning goals,\n\n- methods for structuring its interaction with the human teacher in order to meet those learning goals, and\n\n- modeling and learning from interaction-derived training data to address novelty.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Social Robotics"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:38.013401Z",
+    "raw_html_path": "data/raw/professors/tesca-fitzgerald.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/smita-krishnaswamy",
+    "name": "Smita Krishnaswamy",
+    "title": "Associate Professor of Computer Science",
+    "email": "smita.krishnaswamy@yale.edu",
+    "website": "https://krishnaswamylab.org/",
+    "room_office": null,
+    "office_address": "Central Campus Office: 17 Hillhouse Ave., Room 323 Medical School Office: 100 College St., Room 1127",
+    "perspectives": "Smita Krishnaswamy is an Associate Professor in the departments of Computer Science (SEAS) and Genetics (YSM). She is part of the programs in Applied Mathematics, Computational Biology & Bioinformatics and Interdisciplinary Neuroscience. She is also affiliated with the Yale Center for Biomedical Data Science, Yale Cancer Center, Wu-Tsai Institute. Smita's lab works at the intersection of computer science, applied math, computational biology, and signal processing to develop representation-learning and deep learning methods that enable exploratory analysis, scientific inference and prediction from big biomedical datasets. She has applied her methods on datasets generated from single-cell sequencing, structural biology, biomedical imaging, brain activity recording, electronic health records on a wide variety of biological, cellular, and disease systems. Her techniques generally incorporate mathematical priors from graph spectral theory, manifold learning, signal processing, and topology into machine learning and deep learning frameworks, in order to denoise and model the underlying systems faithfully for predictive insight. Currently her methods are being widely used for data denoising, visualization, generative modeling, dynamics. modeling, comparative analysis and domain transfer.\n\nSmita teaches several courses including: Deep Learning Theory and Applications, Unsupervised learning, and Geometric and Topological Methods in Machine Learning. Prior to joining Yale, Smita completed her postdoctoral training at Columbia University in the systems biology department where she focused on learning computational models of cellular signaling from single-cell mass cytometry data. She obtained her Ph.D. from EECS department at University of Michigan where her research focused on algorithms for automated synthesis and probabilistic verification of nanoscale logic circuits. Following her time in Michigan, Smita spent 2 years at IBM's TJ Watson Research Center as a researcher in the systems division where she worked on automated bug finding and error correction in logic. Smita's work over the years has won several awards including the NSF CAREER Award, Sloan Faculty Fellowship, and Blavatnik fund for Innovation.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Scientific Computing & Applied Math"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:39.915034Z",
+    "raw_html_path": "data/raw/professors/smita-krishnaswamy.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/alex-lew",
+    "name": "Alex Lew",
+    "title": "Assistant Professor of Computer Science",
+    "email": "alexander.lew@yale.edu",
+    "website": null,
+    "room_office": null,
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Alex's research aims to automate and scale up principled probabilistic reasoning, drawing on techniques from programming languages, machine learning, Bayesian statistics, and cognitive science. Alex is especially interested in the theory and practice of probabilistic and differentiable programming languages.\n\nAlex is also a member of the\nGenLM consortium\n, a multi-university partnership aiming to better control, compose, and understand language models using the probabilistic programming and Bayesian inference toolkits.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Natural Language Processing",
+      "Programming Languages & Compilers"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:41.926291Z",
+    "raw_html_path": "data/raw/professors/alex-lew.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/sohee-park",
+    "name": "Sohee Park",
+    "title": "Lecturer of Computer Science",
+    "email": "sohee.park@yale.edu",
+    "website": null,
+    "room_office": "AKW 105",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": null,
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Computer Networks"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:44.233926Z",
+    "raw_html_path": "data/raw/professors/sohee-park.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/daniel-rakita",
+    "name": "Daniel Rakita",
+    "title": "Assistant Professor of Computer Science",
+    "email": "daniel.rakita@yale.edu",
+    "website": null,
+    "room_office": "AKW 503",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "My research involves formulating motion planning and motion optimization algorithms that generate feasible and effective robot manipulator motions in real-time. And, using these motion algorithms as core components, I develop and evaluate robot shared-control interfaces that are intuitive and easy to use, even for novice users.\n\nThe goal of my work is to enable people to intuitively control or work alongside robot manipulation platforms to perform critical tasks deemed unsuitable, undesirable, understaffed, or unsafe for people, such as full-time homecare, home assistance, telenursing, robot surgery, disaster relief, large-scale manufacturing, nuclear materials handling, and space robotics. I use interdisciplinary techniques across robotics and computer science, including motion planning, motion optimization, shared autonomy, human-robot interaction, and machine learning to formulate and validate generalizable, end-to-end solutions within these problem spaces.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Social Robotics"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:47.673940Z",
+    "raw_html_path": "data/raw/professors/daniel-rakita.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/brian-scassellati",
+    "name": "Brian Scassellati",
+    "title": "A. Bartlett Giamatti Professor of Computer Science",
+    "email": "brian.scassellati@yale.edu",
+    "website": "http://scazlab.yale.edu/",
+    "room_office": "AKW 501",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "My research focuses on building embodied computational models of human social behavior, especially the developmental progression of early social skills. Using computational modeling and socially interactive robots, we evaluate models of how infants acquire social skills and assist in the diagnosis and quantification of disorders of social development (such as autism).\n\nMy other interests include humanoid robots, humanrobot interaction, artificial intelligence, machine perception, and social learning.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Social Robotics"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:49.686875Z",
+    "raw_html_path": "data/raw/professors/brian-scassellati.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/marynel-vazquez",
+    "name": "Marynel Vázquez",
+    "title": "Assistant Professor of Computer Science",
+    "email": "marynel.vazquez@yale.edu",
+    "website": "https://www.marynel.net/",
+    "room_office": "AKW 402",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Marynel Vázquez is a computer scientist and roboticist. Her research focuses on Human-Robot Interaction (HRI), specially in multi-party settings. For instance, her work investigates social group phenomena in HRI, like spatial patterns of behavior and group social influence. Also, her work aims to advance perception and decision making algorithms to enable autonomous, social robot behavior in multi-party settings. A key idea that has driven her recent work is abstracting human-robot interactions as graphs. This allows robots to reason about individual, relationship and group factors in unison. Marynel enjoys building systems to demonstrate ideas in practice, including new robots and infrastructure that can facilitate HRI research.\n\nMarynel's research approach is interdisciplinary: it combines elements of computer science (especially artificial intelligence), behavioral science, and design.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Social Robotics"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:51.578299Z",
+    "raw_html_path": "data/raw/professors/marynel-vazquez.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/alex-wong",
+    "name": "Alex Wong",
+    "title": "Assistant Professor of Computer Science",
+    "email": "alex.wong@yale.edu",
+    "website": null,
+    "room_office": "Room 325",
+    "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "- Sensor fusion; unsupervised learning; 3D vision; robust vision under adverse conditions; medical image analysis.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning",
+      "Social Robotics"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:53.257965Z",
+    "raw_html_path": "data/raw/professors/alex-wong.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/rex-zhitao-ying",
+    "name": "Rex (Zhitao) Ying",
+    "title": "Assistant Professor of Computer Science",
+    "email": "rex.ying@yale.edu",
+    "website": "https://graph-and-geometric-learning.github.io/",
+    "room_office": "Room 332",
+    "office_address": "17 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "- For latest news about my lab, visit my lab website:\nGraph and Geometric Learning Lab\n\n- Real-world data can often be expressed in the ubiquitous language of graph, a general concept of entities connected by relations. I focus on developing expressive, scalable and explainable algorithms that incorporate and leverage such relational inductive bias for data expressed as graph structure, via graph neural networks and geometric learning.\n\n- I have worked on graph learning applications in recommender system, anomaly detection, social network analysis, protein networks, drug discovery, physical simulations and many more.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:55.189556Z",
+    "raw_html_path": "data/raw/professors/rex-zhitao-ying.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/steven-zucker",
+    "name": "Steven Zucker",
+    "title": "David & Lucile Packard Professor of Biomedical Engineering & Computer Science",
+    "email": "steven.zucker@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/vision/zucker/index.html",
+    "room_office": "AKW 407",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "- Computational vision is at the heart of robotics and biomedicine, but it is primitive when compared with the human visual sense. Humans demonstrate, effortlessly, enormous visual flexibility and generality, unaware of human vision's staggering complexity. But more than one-third of the primate brain is dedicated to processing visual information.\n\n- How do we characterize the function of billions of neurons in algorithmic terms? Zucker is putting the requirements of vision systems together with insights from neurophysiology and applied mathematics to develop an abstract theory of computational vision. Based on differential geometry, his approach leads to methods of curve detection, shading and texture analyses, stereo, color, and generic shape description. The key to studying and modeling vision is an interdisciplinary perspective, integrating computation, neuroscience, and mathematics.",
+    "areas": [
+      "Artificial Intelligence & Machine Learning"
+    ],
+    "last_scraped_at": "2025-08-19T09:21:58.359998Z",
+    "raw_html_path": "data/raw/professors/steven-zucker.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/abhishek-bhattacharjee",
+    "name": "Abhishek Bhattacharjee",
+    "title": "A. Bartlett Giamatti Professor of Computer Science",
+    "email": "abhishek.bhattacharjee@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/abhishek/",
+    "room_office": "AKW 213",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "- Computer Architecture\n\n- Operating Systems\n\n- Computer Systems\n\n- Brain Sciences",
+    "areas": [
+      "Computer Architecture",
+      "Operating Systems",
+      "Programming Languages & Compilers"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:00.524783Z",
+    "raw_html_path": "data/raw/professors/abhishek-bhattacharjee.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/yongshan-ding",
+    "name": "Yongshan Ding",
+    "title": "Assistant Professor of Computer Science",
+    "email": "yongshan.ding@yale.edu",
+    "website": "https://www.yongshanding.com/",
+    "room_office": "AKW 204",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "- Computer architecture and algorithms in the context of quantum computing and artificial intelligence; theory and application of quantum error correction; quantum hardware/software interface.",
+    "areas": [
+      "Computer Architecture",
+      "Quantum Computing"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:03.281064Z",
+    "raw_html_path": "data/raw/professors/yongshan-ding.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/julie-dorsey",
+    "name": "Julie Dorsey",
+    "title": "Frederick W. Beinecke Professor of Computer Science",
+    "email": "julie.dorsey@yale.edu",
+    "website": "https://graphics.cs.yale.edu/people/julie-dorsey",
+    "room_office": "AKW 508",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Julie Dorsey is a Professor of Computer Science at Yale University, where she teaches computer graphics. She came to Yale in 2002 from MIT, where she held tenured appointments in both the Department of Electrical Engineering and Computer Science (EECS) and the School of Architecture. She received undergraduate degrees in architecture and graduate degrees in computer science from Cornell University.\n\nWith architecture as a driving application, she has studied a wide range of problems in computer graphics, including sketch-based interfaces for early conceptual design, acceleration methods for real-time rendering, and the creation of detailed photorealistic renderings. Her contributions also include algorithms for lighting and acoustical design and visualization. She is particularly well known for her research in modeling the appearance of materials – for example, she pioneered techniques to model the visual richness of irregular metal patinas and eroded stone. Her current research interests include photorealistic image synthesis, material and texture models, illustration techniques, and interactive visualization of complex scenes, with an application to urban environments.\n\nIn addition to serving on numerous conference program committees, she is Editor-in-Chief of ACM Transactions on Graphics and an editorial-board member for Computers and Graphics and Foundations and Trends in Computer Graphics and Vision, and was Papers Chair for ACM SIGGRAPH 2006. She has received several professional awards, including MIT's Edgerton Faculty Achievement Award, a National Science Foundation Career Award, and an Alfred P. Sloan Foundation Research Fellowship. She is a fellow of the Radcliffe Institute at Harvard (2010-11) and the Whitney Humanities Center at Yale (2010-12). Together with two of her colleagues, she recently helped establish the new Computing and the Arts major at Yale.",
+    "areas": [
+      "Computer Graphics"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:05.923217Z",
+    "raw_html_path": "data/raw/professors/julie-dorsey.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/theodore-kim",
+    "name": "Theodore Kim",
+    "title": "Professor of Computer Science",
+    "email": "theodore.kim@yale.edu",
+    "website": "https://graphics.cs.yale.edu/",
+    "room_office": "AKW 412",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "- Computer Graphics, Computer Animation, Solid Mechanics, Computational Fluids Dynamics, Fractal Growth Structures.",
+    "areas": [
+      "Computer Graphics",
+      "Scientific Computing & Applied Math"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:07.880159Z",
+    "raw_html_path": "data/raw/professors/theodore-kim.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/holly-rushmeier",
+    "name": "Holly Rushmeier",
+    "title": "John C. Malone Professor of Computer Science",
+    "email": "holly.rushmeier@yale.edu",
+    "website": null,
+    "room_office": "AKW 112",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Holly Rushmeier received the BS, MS and PhD degrees in Mechanical Engineering from Cornell University in 1977, 1986 and 1988 respectively. Between receiving the BS and returning to graduate school in 1983 she worked as an engineer at the Boeing Commercial Airplane Company and at Washington Natural Gas Company (now a part of Puget Sound Energy). In 1988 she joined the Mechanical Engineering faculty at Georgia Tech. While there she conducted sponsored research in the area of computer graphics image synthesis and taught classes heat transfer and numerical methods at both the undergraduate and graduate levels. At the end of 1991 Dr. Rushmeier joined the computing and mathematics staff of the National Institute of Standards and Technology, focusing on scientific data visualization.\n\nFrom 1996 to early 2004 Dr. Rushmeier was a research staff member at the IBM T.J. Watson Research Center. At IBM she worked on a variety of data visualization problems in applications ranging from engineering to finance. She also worked in the area of acquisition of data required for generating realistic computer graphics models, including a project to create a digital model of Michelangelo's Florence Pieta, and the development of a scanning system to capture shape and appearance data for presenting Egyptian cultural artifacts on the World Wide Web.\n\nDr. Rushmeier was Editor-in-Chief of ACM Transactions on Graphics from 1996-99. She has also served on the editorial board of IEEE Transactions on Visualization and Computer Graphics. She is currently on the editorial boards of IEEE Computer Graphics and Applications and Computer Graphics Forum. In 1996 she served as the papers chair for the ACM SIGGRAPH conference, in 1998 as the papers co-chair for the IEEE Visualization conference and in 2000 as the papers co-chair for the Eurographics Rendering Workshop. She has also served in numerous program committees including multiple years on the committees for SIGGRAPH, IEEE Visualization, Eurographics, Eurographics Rendering Workshop, and Graphics Interface.\n\nDr. Rushmeier has lectured at many meetings and academic institutions, including three invited keynote presentations at international meetings (Eurographics Rendering Workshop 94, 3DIM 01 , Eurographics Conference 2001.) She has spoken at and/or organized many tutorials and panels at the SIGGRAPH and IEEE Visualization conferences.",
+    "areas": [
+      "Computer Graphics"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:11.053672Z",
+    "raw_html_path": "data/raw/professors/holly-rushmeier.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/scott-petersen",
+    "name": "Scott Petersen",
+    "title": "Senior Lecturer of Computer Science",
+    "email": "scott.petersen@yale.edu",
+    "website": "https://www.scottericpetersen.com/",
+    "room_office": "DL 425",
+    "office_address": "10 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": null,
+    "areas": [
+      "Computer Music"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:14.218686Z",
+    "raw_html_path": "data/raw/professors/scott-petersen.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/anurag-khandelwal",
+    "name": "Anurag Khandelwal",
+    "title": "Assistant Professor of Computer Science",
+    "email": "anurag.khandelwal@yale.edu",
+    "website": "https://www.anuragkhandelwal.com/",
+    "room_office": "AKW 205",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "- Operating Systems, Distributed Systems, Databases, Computer Networks",
+    "areas": [
+      "Computer Networks",
+      "Distributed Computing",
+      "Operating Systems",
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:15.951055Z",
+    "raw_html_path": "data/raw/professors/anurag-khandelwal.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/robert-soule",
+    "name": "Robert Soulé",
+    "title": "Associate Professor of Computer Science",
+    "email": "robert.soule@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/soule/",
+    "room_office": "Dunham 408",
+    "office_address": "10 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "- Networking, distributed systems, databases, and programming languages.",
+    "areas": [
+      "Computer Networks",
+      "Database Systems",
+      "Operating Systems"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:18.721205Z",
+    "raw_html_path": "data/raw/professors/robert-soule.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/y-richard-yang",
+    "name": "Y. Richard Yang",
+    "title": "Professor of Computer Science",
+    "email": "yang.r.yang@yale.edu",
+    "website": "http://cs-www.cs.yale.edu/homes/yry/",
+    "room_office": "AKW 208A",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "- Computer networks, mobile computing, wireless networks, sensor networks, and network security. The design and analysis of large-scale, distributed networks where the network nodes are autonomous and guided by self interests.",
+    "areas": [
+      "Computer Networks"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:20.709401Z",
+    "raw_html_path": "data/raw/professors/y-richard-yang.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/lin-zhong",
+    "name": "Lin Zhong",
+    "title": "Joseph C. Tsai Professor of Computer Science",
+    "email": "lin.zhong@yale.edu",
+    "website": "http://www.yecl.org",
+    "room_office": "AKW 308A",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Lin Zhong is Professor of Computer Science with Yale University. He received his B.S and M.S. from Tsinghua University and Ph.D. from Princeton University. From 2005 to 2019, he was with Rice University.\n\nAt Yale, he leads the Efficient Computing Lab to make computing, communication, and interfacing more efficient and effective. He and his students received the best paper awards from ACM MobileHCI, IEEE PerCom, ACM MobiSys (3), ACM ASPLOS and IEEE QCE. He is a recipient of the NSF CAREER Award, the Duncan Award from Rice University, the RockStar Award (2014) and Test of Time Award (2022) from ACM SIGMOBILE. He is a Fellow of IEEE and ACM.",
+    "areas": [
+      "Computer Networks",
+      "Operating Systems",
+      "Quantum Computing",
+      "Social Robotics"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:22.459059Z",
+    "raw_html_path": "data/raw/professors/lin-zhong.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/abraham-silberschatz",
+    "name": "Abraham Silberschatz",
+    "title": "Sidney J. Weinberg Professor of Computer Science",
+    "email": "abraham.silberschatz@yale.edu",
+    "website": "https://codex.cs.yale.edu/avi/",
+    "room_office": "AKW 308",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Avi Silberschatz is the Sidney J. Weinberg Professor of Computer Science at Yale University. Prior to joining Yale, he was the Vice President of the Information Sciences Research Center at Bell Laboratories, Murray Hill, New Jersey. Prior to that, he held a chaired professorship in the Department of Computer Sciences at the University of Texas at Austin. His research interests include database systems, operating systems, Bioscience database systems, storage system, network management, and distributed systems.\n\nSilberschatz is a Fellow of ACM, a Fellow of IEEE, a Fellow of AAAS, and a member of the Connecticut Academy of Science and Engineering. He received the 2002 IEEE Taylor L. Booth Education Award, the 1998 ACM Karl V. Karlstrom Outstanding Educator Award, and the 1997 ACM SIGMOD Contribution Award. In recognition for his outstanding level of innovation and technical excellence, Silberschatz was awarded the Bell Laboratories President's Award, in 1998 (QTM Project), 1999 (DataBlitz Project), and 2004 (NetInventory Project).\n\nSilberschatz has graduated over a dozen Ph.D. students who now hold positions in academic institutions and industrial research laboratories. His writings have appeared in numerous ACM and IEEE publications and in other professional conferences and journals. He obtained over four dozen patents and over two dozen grants. He is a co-author of two well known textbooks – Operating System Concepts and Database System Concepts. Silberschatz has written editorials dealing with technology and policy issues, which have appeared in various publications including The New York Times, Boston Globe, Hartford Courant, and Industry Standard, among others.",
+    "areas": [
+      "Database Systems",
+      "Distributed Computing",
+      "Operating Systems"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:24.138315Z",
+    "raw_html_path": "data/raw/professors/abraham-silberschatz.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ben-fisch",
+    "name": "Ben Fisch",
+    "title": "Assistant Professor of Computer Science",
+    "email": "ben.fisch@yale.edu",
+    "website": "https://sites.google.com/site/benafisch/",
+    "room_office": "AKW 406",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "- Applied Cryptography, Distributed Systems, Blockchains and Cryptocurrencies",
+    "areas": [
+      "Distributed Computing",
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:25.972223Z",
+    "raw_html_path": "data/raw/professors/ben-fisch.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/david-gelernter",
+    "name": "David Gelernter",
+    "title": "Professor of Computer Science",
+    "email": "david.gelernter@yale.edu",
+    "website": null,
+    "room_office": "AKW 107",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "David Gelernter is professor of computer science at Yale, chief scientist at Mirror Worlds Technologies, contributing editor at the Weekly Standard and member of the National Council of the Arts. He's the author of several books and many technical articles; also essays, art criticism and fiction. The \"tuple spaces\" introduced in Carriero and Gelernter's Linda system (1983) are the basis of many computer-communication and distributed programming systems worldwide. \"Mirror Worlds\" (1991) \"foresaw\" the World Wide Web (Reuters, 3/20/01) and was \"one of the inspirations for Java\"; the \"lifestreams\" system (first implemented by Eric Freeman at Yale) is the basis for Mirror Worlds Technologies' software. \"Breaking out of the box\" (NY Times magazine, '97) forecast and described the advent of less-ugly computers (Apple's iMac arrived in '98). Gelernter's essays are widely anthologized (for example in J. Brockman, ed., \"The Next Fifty Years: new essays from 25 of the world's leading scientists\" (Vintage, 2002), R. Stolley, ed., \"Life Magazine - Century of Change,\" (Little Brown, 2001), and the ACM's 50th Anniversary collection).\n\nHe's the author of \"The Muse in the Machine\" (1994, about poetry and AI), the novel \"1939\" (1995), \"Machine Beauty\" (1998, about aesthetics and technology) and other books; he's published in Commentary, ArtNews, Washington Post and many others. Recent talks include the Bradley Lecture at the American Enterprise Institute, keynotes at Agenda 2003, Intl. Wireless World, PC Expo, and the 2002 Organick Lecture in Computer Science at Univ Utah.",
+    "areas": [
+      "Distributed Computing",
+      "Programming Languages & Compilers"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:28.952179Z",
+    "raw_html_path": "data/raw/professors/david-gelernter.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/zhong-shao",
+    "name": "Zhong Shao",
+    "title": "Thomas L. Kempner Professor of Computer Science",
+    "email": "zhong.shao@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/shao-zhong/",
+    "room_office": "AKW 314",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Zhong Shao is a Professor of Computer Science at Yale University. His research interests include programming languages, compilers, formal methods, and operating systems. He earned his Ph.D. in Computer Science from Princeton University in 1994. During his early career, he was a key developer and author of many key compilation phases used in the Standard ML of New Jersey compiler, and also one of the first to build a type-based intermediate representation in a functional-language compiler. He designed and developed the first production-quality type-preserving compiler for the entire Standard ML 1997 language extended with higher-order modules and was the main architect of the FLINT certifying infrastructure.\n\nIn recent years, he has been interested in developing and applying new language-based technologies to build certified system software (e.g., OS kernels and hypervisors). Certified software consists of a binary machine executable plus a rigorous machine-checkable proof that the software is free of bugs with respect to specific requirements. A certified OS kernel is a library-based kernel but with formal specifications and proofs about all of its abstraction layers and system libraries. Dr. Shao's current research intends to attack the following three important questions:\n\n- Under a clean-slate approach, what are the right OS kernel structures that can offer the best support for resilience, extensibility, and security?\n\n- What are the best programming languages and developing environments for implementing such certified kernels?\n\n- What new formal methods we need to develop in order to support these new languages and make certified kernels both practical and scalable?",
+    "areas": [
+      "Distributed Computing",
+      "Operating Systems",
+      "Programming Languages & Compilers",
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:31.110267Z",
+    "raw_html_path": "data/raw/professors/zhong-shao.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/ruzica-piskac",
+    "name": "Ruzica Piskac",
+    "title": "Professor of Computer Science",
+    "email": "ruzica.piskac@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/piskac/",
+    "room_office": "AKW 208",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "Ruzica Piskac is a professor of computer science at Yale University. Her research interests span programming languages, software verification, automated reasoning, and code synthesis. Recently, her work has also explored the use of artificial intelligence and automated reasoning to support legal reasoning, extending formal methods into domains beyond traditional software. A common thread in Ruzica’s research is improving software reliability and trustworthiness through formal techniques. She joined Yale in 2013 as an assistant professor; prior to that, she was an independent research group leader at the Max Planck Institute for Software Systems in Germany. In July 2019, she was named the Donna L. Dubinsky Associate Professor of Computer Science, one of the highest honors an untenured faculty member at Yale can receive. Ruzica has earned numerous recognitions for both research and teaching, including the Patrick Denantes Prize for her PhD thesis, a CCS Distinguished Paper Award, a Communications of the ACM Research Highlight, an NSF CAREER award, the Facebook Communications and Networking Award, the Microsoft Research SEIF Award, the Amazon Research Awards, and the 2019 Ackerman Award for Teaching and Mentoring.",
+    "areas": [
+      "Programming Languages & Compilers",
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:33.866459Z",
+    "raw_html_path": "data/raw/professors/ruzica-piskac.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/vladimir-rokhlin",
+    "name": "Vladimir Rokhlin",
+    "title": "Arthur K. Watson Professor of Computer Science",
+    "email": "vladimir.rokhlin@yale.edu",
+    "website": null,
+    "room_office": null,
+    "office_address": "12 Hillhouse Avenue New Haven, CT 06511",
+    "perspectives": "Vladimir Rokhlin's research interests include fast deterministic and randomized algorithms of computational mathematics, randomized algorithms, numerical harmonic analysis, numerical linear algebra, special functions, \"fast\" algorithms of numerical linear algebra.\n\nRokhlin is a member of the National Academy of Sciences; Member of the National Academy of Engineering; recipient of the 2001 Leroy P. Steele Prize for a Seminal contribution to Research; recipient of the 2001 Rice University Distinguished Alumnus Award; recipient of the 2006 Institute of Electrical and Electronics Engineers (IEEE) Honorary Membership; 2009 SIAM Fellow; recipient of the 2011 Maxwell Prize from the ICIAM; recipient of the 2014 William Benter Prize.",
+    "areas": [
+      "Scientific Computing & Applied Math"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:36.638692Z",
+    "raw_html_path": "data/raw/professors/vladimir-rokhlin.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/charalampos-papamanthou",
+    "name": "Charalampos Papamanthou",
+    "title": "Associate Professor of Computer Science",
+    "email": "charalampos.papamanthou@yale.edu",
+    "website": "https://www.cs.yale.edu/homes/cpap/",
+    "room_office": "AKW 414",
+    "office_address": "51 Prospect Street New Haven, CT 06511",
+    "perspectives": "- Computer Security and Applied Cryptography.",
+    "areas": [
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:38.547326Z",
+    "raw_html_path": "data/raw/professors/charalampos-papamanthou.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/katerina-sotiraki",
+    "name": "Katerina Sotiraki",
+    "title": "Assistant Professor of Computer Science",
+    "email": "katerina.sotiraki@yale.edu",
+    "website": "https://sotiraki.com/",
+    "room_office": "AKW 403",
+    "office_address": "51 Prospect Street New Haven, CT 06520",
+    "perspectives": "- Theoretical Cryptography\n\n- Post-Quantum Cryptography\n\n- Complexity Theory\n\n- Secure Computation",
+    "areas": [
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:40.632490Z",
+    "raw_html_path": "data/raw/professors/katerina-sotiraki.html"
+  },
+  {
+    "url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/fan-zhang",
+    "name": "Fan Zhang",
+    "title": "Assistant Professor of Computer Science",
+    "email": "f.zhang@yale.edu",
+    "website": "https://www.fanzhang.me/",
+    "room_office": "AKW 503",
+    "office_address": "51 Prospect Street New Haven, CT 06520",
+    "perspectives": "- Computer security; Applied Cryptography; Decentralized systems; Blockchains; Trusted Execution Environments (TEEs).",
+    "areas": [
+      "Security & Cryptography"
+    ],
+    "last_scraped_at": "2025-08-19T09:22:42.374958Z",
+    "raw_html_path": "data/raw/professors/fan-zhang.html"
+  }
+]
