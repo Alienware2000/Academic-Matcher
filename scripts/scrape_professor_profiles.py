@@ -19,8 +19,6 @@ from collections import defaultdict
 # # Now `data` is a Python object (usually a list or dict)
 # print(f"Loaded {len(data)} research_areas from {file_path}")
 
-# print(f"Unique professor profile URLs: {len(prof_to_areas)}")
-
 # sample_urls = list(prof_to_areas.keys())[:2]
 # print(sample_urls)
 
@@ -301,9 +299,15 @@ def scrape_all_profiles(prof_to_areas,
         print("Failed examples saved to data/failed_professors.json")
 
 if __name__ == "__main__":
-    # Load your research_areas.json (you already have this):
-    with open("data/research_areas.json", "r", encoding="utf-8") as f:
+    # Path to your JSON file
+    file_path = "data/research_areas.json"
+
+    # Load your research_areas.json:
+    with open(file_path, "r", encoding="utf-8") as f:
         areas = json.load(f)
+
+    # Now `areas` is a Python object (usually a list or dict)
+    print(f"Loaded {len(areas)} research_areas from {file_path}")
 
     # Build a mapping: profile_url -> set(areas)
     prof_to_areas = defaultdict(set)
