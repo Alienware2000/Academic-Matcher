@@ -1,9 +1,12 @@
-beautifulsoup4 @ file:///croot/beautifulsoup4-split_1718029820055/work
-Brotli @ file:///croot/brotli-split_1736182456865/work
-certifi @ file:///croot/certifi_1745939216646/work/certifi
-charset-normalizer @ file:///croot/charset-normalizer_1721748349566/work
-idna @ file:///croot/idna_1714398848350/work
-PySocks @ file:///work/ci_py311/pysocks_1676822712504/work
-requests @ file:///croot/requests_1730999120400/work
-soupsieve @ file:///croot/soupsieve_1696347547217/work
-urllib3 @ file:///croot/urllib3_1737133630106/work
+beautifulsoup4 
+Brotli 
+certifi 
+charset-normalizer 
+idna  
+PySocks 
+requests 
+soupsieve 
+urllib3
+tqdm
+numpy
+sentence-transformers
