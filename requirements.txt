@@ -10,3 +10,4 @@ urllib3
 tqdm
 numpy
 sentence-transformers
+faiss-cpu
