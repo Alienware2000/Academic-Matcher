@@ -152,14 +152,14 @@ if __name__ == "__main__":
     save_metadata_jsonl(metas, meta_path)
     print(f"[save] {emb_path} and {meta_path}")
 
-    # --- Tiny demo: encode a query and retrieve top-5 ---
-    query = "robotics and human-robot interaction"
-    q_vec = model.encode([query], convert_to_numpy=True, normalize_embeddings=True).astype(np.float32)[0]
-    # Note: we asked the model to normalize the query for us (normalize_embeddings=True)
+    # # --- Tiny demo: encode a query and retrieve top-5 ---
+    # query = "robotics and human-robot interaction"
+    # q_vec = model.encode([query], convert_to_numpy=True, normalize_embeddings=True).astype(np.float32)[0]
+    # # Note: we asked the model to normalize the query for us (normalize_embeddings=True)
 
-    top5 = top_k_cosine(q_vec[np.newaxis, :], emb, k=5)
-    print("\n[demo] query:", query)
-    for rank, (i, score) in enumerate(top5, start=1):
-        name = metas[i]["name"]
-        areas = ", ".join(metas[i]["areas"])
-        print(f"  {rank:>2}. {name:30s} | score={score: .3f} | areas={areas}")
+    # top5 = top_k_cosine(q_vec[np.newaxis, :], emb, k=5)
+    # print("\n[demo] query:", query)
+    # for rank, (i, score) in enumerate(top5, start=1):
+    #     name = metas[i]["name"]
+    #     areas = ", ".join(metas[i]["areas"])
+    #     print(f"  {rank:>2}. {name:30s} | score={score: .3f} | areas={areas}")
