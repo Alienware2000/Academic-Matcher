@@ -1,4 +1,5 @@
 import os
+import re
 import numpy as np
 from typing import List, Dict, Tuple
 
@@ -34,6 +35,11 @@ def format_snippet(text: str, max_chars: int = 220) -> str:
     t = " ".join(text.split())  # clean excessive whitespace/newlines
     return (t[:max_chars] + "…") if len(t) > max_chars else t
 
+def normalize_query(q: str) -> str:
+    q = q.strip().lower()
+    q = re.sub(r"\s+", " ", q)
+    return q
+
 def main():
     # 1) Load artifacts
     print("[search] loading artifacts …")
@@ -61,7 +67,8 @@ def main():
             break
 
         # 4) Encode the query (normalize=True ensures unit-length vector)
-        q_vec = model.encode([query], convert_to_numpy=True, normalize_embeddings=True).astype(np.float32)
+        query_norm = normalize_query(query)
+        q_vec = model.encode([query_norm], convert_to_numpy=True, normalize_embeddings=True).astype(np.float32)
         # shape (1, D)
 
         # 5) Retrieve top-k
