@@ -1,7 +1,7 @@
 import os       
-import json     
+import json
+import numpy as np     
 from typing import List, Dict, Tuple
-import numpy as np
 from sentence_transformers import SentenceTransformer
 
 
@@ -108,6 +108,18 @@ def save_metadata_jsonl(metas: List[Dict], path: str) -> None:
         for m in metas:
             f.write(json.dumps(m, ensure_ascii=False) + "\n")
 
+def top_k_cosine(query_vec: np.ndarray, emb_matrix: np.ndarray, k: int = 5):
+    """
+    Compute top-k cosine similarity scores between a single query vector (1 x D)
+    and the matrix (N x D). Assumes both are L2-normalized.
+    Returns a list of (index, score), highest first.
+    """
+    sims = (query_vec @ emb_matrix.T).ravel()         # dot products
+    idx = np.argpartition(-sims, kth=min(k, len(sims)-1))[:k]
+    idx_sorted = idx[np.argsort(-sims[idx])]
+    return [(int(i), float(sims[i])) for i in idx_sorted]
+
+
 if __name__ == "__main__":
     profiles = load_profiles(PROFILES_PATH)
     documents, metas = build_corpus(profiles)
@@ -139,3 +151,15 @@ if __name__ == "__main__":
     np.save(emb_path, emb)
     save_metadata_jsonl(metas, meta_path)
     print(f"[save] {emb_path} and {meta_path}")
+
+    # --- Tiny demo: encode a query and retrieve top-5 ---
+    query = "robotics and human-robot interaction"
+    q_vec = model.encode([query], convert_to_numpy=True, normalize_embeddings=True).astype(np.float32)[0]
+    # Note: we asked the model to normalize the query for us (normalize_embeddings=True)
+
+    top5 = top_k_cosine(q_vec[np.newaxis, :], emb, k=5)
+    print("\n[demo] query:", query)
+    for rank, (i, score) in enumerate(top5, start=1):
+        name = metas[i]["name"]
+        areas = ", ".join(metas[i]["areas"])
+        print(f"  {rank:>2}. {name:30s} | score={score: .3f} | areas={areas}")
