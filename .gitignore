@@ -5,3 +5,5 @@ __pycache__/
 data/raw/**
 data/embeddings/*.npy
 data/embeddings/*.jsonl
+data/index/*.ivf
+data/index/*.bin
